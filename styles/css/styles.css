@@ -58,12 +58,12 @@
 .header__container__content .navbar__container__home__container .navbar__nav__list__link {
   font-family: "Archivo", sans-serif;
   font-weight: 600;
-  margin: 0 0.5rem;
+  margin: 0 0.8rem;
 }
 .header__container__content .navbar__container__icon {
   display: flex;
   align-items: center;
-  margin-right: 5rem;
+  margin-right: 3.5rem;
 }
 .header__container__content .navbar__container__icon__container {
   display: flex;
@@ -77,9 +77,14 @@
   width: 20px;
 }
 .header__container__content .navbar__container__icon .login {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .header__container__content .navbar__container__icon {
+    margin-right: 5rem;
+  }
+}
 html, * {
   box-sizing: border-box;
   margin: 0;
