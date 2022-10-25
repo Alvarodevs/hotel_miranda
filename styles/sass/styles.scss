@@ -1,6 +1,9 @@
 @use 'colors';
 @use 'fonts';
 
+//Blocks import
+@use './blocks/header';
+
 html, * {
     box-sizing: border-box;
     margin: 0;

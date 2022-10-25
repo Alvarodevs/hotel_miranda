@@ -1,6 +1,85 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&family=Roboto:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Old+Standard+TT&family=Roboto:wght@700&display=swap");
+.header__container {
+  width: 100%;
+  height: 100px;
+  background-color: #222222;
+}
+.header__container__content {
+  padding: 1rem 10% 0 10%;
+}
+.header__container__content__text {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+.header__container__content .navbar__container {
+  background-color: #ffffff;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.header__container__content .navbar__container__home__container {
+  display: flex;
+}
+.header__container__content .navbar__container__home__container .navbar__home {
+  width: 5rem;
+  height: 5rem;
+  background-color: #ffffff;
+  margin: 20px;
+  box-shadow: 0px 14px 24px rgba(139, 139, 139, 0.25);
+}
+.header__container__content .navbar__container__home__container .navbar__home__logo {
+  font-family: "Archivo", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 0.4rem;
+}
+.header__container__content .navbar__container__home__container__text {
+  font-family: "Archivo", sans-serif;
+  display: block;
+  margin-top: 2.5rem;
+  font-size: 26px;
+}
+.header__container__content .navbar__container__home__container__text span {
+  font-weight: 700;
+}
+.header__container__content .navbar__container__home__container .navbar__nav {
+  padding-left: 2rem;
+}
+.header__container__content .navbar__container__home__container .navbar__nav__list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.header__container__content .navbar__container__home__container .navbar__nav__list__link {
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+  margin: 0 0.5rem;
+}
+.header__container__content .navbar__container__icon {
+  display: flex;
+  align-items: center;
+  margin-right: 5rem;
+}
+.header__container__content .navbar__container__icon__container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid rgba(133, 133, 133, 0.3);
+}
+.header__container__content .navbar__container__icon__container img {
+  width: 20px;
+}
+.header__container__content .navbar__container__icon .login {
+  margin-right: 10px;
+}
+
 html, * {
   box-sizing: border-box;
   margin: 0;
