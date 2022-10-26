@@ -21,11 +21,25 @@
             justify-content: space-between;
             box-shadow: 0px 3px 6px rgba(colors.$black-full, 0.29);
 
-            .nav__menu__links {
+            .nav__links {
                 display: flex;
-
+                position: relative;
                 &__burger {
                     display: none;
+                    .navbar__nav__list {
+                        position: absolute;
+                        list-style: none;
+                        align-items: center;
+                        top: 126px;
+                        left: 0;
+                        width: 100vw;
+                        background-color: colors.$white;
+                        &__link {
+                            font-family: fonts.$archivo;
+                            font-weight: 600;
+                            margin: 1rem 2rem;
+                        }
+                    }
                 }
                 .burger-icon {
                     margin: 3rem 0.5rem 3rem 2rem;
@@ -113,7 +127,7 @@
         }
         .header__container__content {
             .navbar__container {
-                .nav__menu__links {
+                .nav__links {
                     display: flex;
                     .burger-icon {
                         display: none;
@@ -122,20 +136,21 @@
                         display: none;
                     }
                     .nav__menu__links {
+                        display: flex;
                         &__desktop {
                             display: flex;
                             margin: 0 0 0 3rem;
                             .navbar__nav__list {
-                                    display: flex;
-                                    justify-content: space-between;
-                                    list-style: none;
-                                    align-items: center;
+                                display: flex;
+                                justify-content: space-between;
+                                list-style: none;
+                                align-items: center;
 
-                                    &__link {
-                                        font-family: fonts.$archivo;
-                                        font-weight: 600;
-                                        margin: 1rem 0.8rem;
-                                    }
+                                &__link {
+                                    font-family: fonts.$archivo;
+                                    font-weight: 600;
+                                    margin: 1rem 0.8rem;
+                                }
                             }
                         }
                     }
