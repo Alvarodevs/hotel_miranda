@@ -7,9 +7,8 @@
     background-color: colors.$black;
 
     &__content {
-        padding: 1rem 10% 0 10%;
-
         &__text {
+            display: none;
             color: colors.$white;
             font-family: fonts.$roboto;
             margin-bottom: 10px;
@@ -20,49 +19,49 @@
             height: 120px;
             display: flex;
             justify-content: space-between;
+            box-shadow: 0px 3px 6px rgba(colors.$black-full, 0.29);
 
-            &__home__container {
+            .nav__menu__links {
                 display: flex;
 
-                .navbar__home {
-                    width: 5rem;
-                    height: 5rem;
-                    background-color: colors.$white;
-                    margin: 20px;
-                    box-shadow: 0px 14px 24px rgba(colors.$grey-shadow, 0.25);
-
-                    &__logo {
-                        font-family: fonts.$archivo;
-                        font-size: 4rem;
-                        text-align: center;
-                        padding-top: 0.4rem;
-                    }
+                &__burger {
+                    display: none;
+                }
+                .burger-icon {
+                    margin: 3rem 0.5rem 3rem 2rem;
                 }
 
-                &__text {
-                    font-family: fonts.$archivo;
+                .nav__menu__links {
                     display: block;
-                    margin-top: 2.5rem;
-                    font-size: 26px;
-                    span {
-                        font-weight: 700;
-                    }
-                }
-                .navbar__nav {
-                    padding-left: 2rem;
 
-                    &__list {
+                    &__home {
                         display: flex;
-                        list-style: none;
-                        justify-content: space-between;
-                        align-items: center;
-                        height: 100%;
 
-                        &__link {
+                        &__logo {
                             font-family: fonts.$archivo;
-                            font-weight: 600;
-                            margin: 0 0.8rem;
+                            font-size: 4rem;
+                            text-align: center;
+                            padding-top: 0.4rem;
+                            width: 5rem;
+                            height: 5rem;
+                            background-color: colors.$white;
+                            margin: 20px;
+                            box-shadow: 0px 14px 24px
+                                rgba(colors.$grey-shadow, 0.25);
                         }
+
+                        &__text {
+                            font-family: fonts.$archivo;
+                            display: block;
+                            margin-top: 2rem;
+                            font-size: 26px;
+                            span {
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                    &__desktop {
+                        display: none;
                     }
                 }
             }
@@ -70,7 +69,7 @@
             &__icon {
                 display: flex;
                 align-items: center;
-                margin-right: 3.5rem;
+                margin-right: 2rem;
 
                 &__container {
                     display: flex;
@@ -91,10 +90,57 @@
     }
 }
 
+@media only screen and (min-width: 520px) {
+    .header__container {
+        .header__container__content {
+            .navbar__container {
+                .navbar__container__icon {
+                    padding-right: 3%;
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (min-width: 1000px) {
-    .header__container__content {
-        .navbar__container__icon {
-            margin-right: 5rem;
+    .header__container {
+        &__content {
+            padding: 1rem 10% 0 10%;
+
+            &__text {
+                display: block;
+            }
+        }
+        .header__container__content {
+            .navbar__container {
+                .nav__menu__links {
+                    display: flex;
+                    .burger-icon {
+                        display: none;
+                    }
+                    &__burger {
+                        display: none;
+                    }
+                    .nav__menu__links {
+                        &__desktop {
+                            display: flex;
+                            margin: 0 0 0 3rem;
+                            .navbar__nav__list {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    list-style: none;
+                                    align-items: center;
+
+                                    &__link {
+                                        font-family: fonts.$archivo;
+                                        font-weight: 600;
+                                        margin: 1rem 0.8rem;
+                                    }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 } ;

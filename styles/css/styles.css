@@ -6,10 +6,8 @@
   height: 100px;
   background-color: #222222;
 }
-.header__container__content {
-  padding: 1rem 10% 0 10%;
-}
 .header__container__content__text {
+  display: none;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   margin-bottom: 10px;
@@ -19,51 +17,50 @@
   height: 120px;
   display: flex;
   justify-content: space-between;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
 }
-.header__container__content .navbar__container__home__container {
+.header__container__content .navbar__container .nav__menu__links {
   display: flex;
 }
-.header__container__content .navbar__container__home__container .navbar__home {
+.header__container__content .navbar__container .nav__menu__links__burger {
+  display: none;
+}
+.header__container__content .navbar__container .nav__menu__links .burger-icon {
+  margin: 3rem 0.5rem 3rem 2rem;
+}
+.header__container__content .navbar__container .nav__menu__links .nav__menu__links {
+  display: block;
+}
+.header__container__content .navbar__container .nav__menu__links .nav__menu__links__home {
+  display: flex;
+}
+.header__container__content .navbar__container .nav__menu__links .nav__menu__links__home__logo {
+  font-family: "Archivo", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 0.4rem;
   width: 5rem;
   height: 5rem;
   background-color: #ffffff;
   margin: 20px;
   box-shadow: 0px 14px 24px rgba(139, 139, 139, 0.25);
 }
-.header__container__content .navbar__container__home__container .navbar__home__logo {
-  font-family: "Archivo", sans-serif;
-  font-size: 4rem;
-  text-align: center;
-  padding-top: 0.4rem;
-}
-.header__container__content .navbar__container__home__container__text {
+.header__container__content .navbar__container .nav__menu__links .nav__menu__links__home__text {
   font-family: "Archivo", sans-serif;
   display: block;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   font-size: 26px;
 }
-.header__container__content .navbar__container__home__container__text span {
+.header__container__content .navbar__container .nav__menu__links .nav__menu__links__home__text span {
   font-weight: 700;
 }
-.header__container__content .navbar__container__home__container .navbar__nav {
-  padding-left: 2rem;
-}
-.header__container__content .navbar__container__home__container .navbar__nav__list {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-}
-.header__container__content .navbar__container__home__container .navbar__nav__list__link {
-  font-family: "Archivo", sans-serif;
-  font-weight: 600;
-  margin: 0 0.8rem;
+.header__container__content .navbar__container .nav__menu__links .nav__menu__links__desktop {
+  display: none;
 }
 .header__container__content .navbar__container__icon {
   display: flex;
   align-items: center;
-  margin-right: 3.5rem;
+  margin-right: 2rem;
 }
 .header__container__content .navbar__container__icon__container {
   display: flex;
@@ -80,9 +77,41 @@
   margin-right: 20px;
 }
 
+@media only screen and (min-width: 520px) {
+  .header__container .header__container__content .navbar__container .navbar__container__icon {
+    padding-right: 3%;
+  }
+}
 @media only screen and (min-width: 1000px) {
-  .header__container__content .navbar__container__icon {
-    margin-right: 5rem;
+  .header__container__content {
+    padding: 1rem 10% 0 10%;
+  }
+  .header__container__content__text {
+    display: block;
+  }
+  .header__container .header__container__content .navbar__container .nav__menu__links {
+    display: flex;
+  }
+  .header__container .header__container__content .navbar__container .nav__menu__links .burger-icon {
+    display: none;
+  }
+  .header__container .header__container__content .navbar__container .nav__menu__links__burger {
+    display: none;
+  }
+  .header__container .header__container__content .navbar__container .nav__menu__links .nav__menu__links__desktop {
+    display: flex;
+    margin: 0 0 0 3rem;
+  }
+  .header__container .header__container__content .navbar__container .nav__menu__links .nav__menu__links__desktop .navbar__nav__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+  }
+  .header__container .header__container__content .navbar__container .nav__menu__links .nav__menu__links__desktop .navbar__nav__list__link {
+    font-family: "Archivo", sans-serif;
+    font-weight: 600;
+    margin: 1rem 0.8rem;
   }
 }
 html, * {
