@@ -1,0 +1,191 @@
+@use "../colors";
+@use "../fonts";
+
+.footer {
+    &__content {
+        padding: 0 20px;
+        background-image: url("../../../assets/images/footer-background.svg");
+    }
+
+    &__description {
+        padding-top: 30px;
+        .logo {
+            display: flex;
+            gap: 15px;
+            height: 130px;
+
+            &__back {
+                background-color: colors.$gold-light;
+                box-shadow: 0px 14px 24px 0px rgba(colors.$grey-shadow, 0.25);
+                width: 80px;
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &__letter {
+                font-family: fonts.$archivo;
+                color: colors.$white;
+                font-size: 40px;
+            }
+
+            &__text {
+                margin-top: 1rem;
+                font-family: fonts.$archivo;
+                font-size: 26px;
+                line-height: 1.6rem;
+                color: colors.$black-text;
+                letter-spacing: 2px;
+                span {
+                    font-weight: 700;
+                }
+            }
+        }
+        &__text {
+            font-family: fonts.$archivo;
+            font-size: 16px;
+            margin-bottom: 2rem;
+        }
+        &__social-media {
+                height: 50px;        
+            .social-media-link {
+                text-decoration: none;
+                height: 34px;
+                background-color: colors.$grey-light;
+                padding: 10px;
+                transition: 0.3s;
+                margin: 0 10px 0 0;
+                
+                &__icon {
+                    margin: auto;
+                }
+                &:hover{
+                    background-color: colors.$gold-light;
+                }
+            }
+        }
+    }
+
+    &__services {
+        &__title {
+            margin-top: 40px;
+            font-family: fonts.$old;
+            font-size: 24px;
+            color: colors.$black;
+        }
+
+        &__container {
+            display: flex;
+            gap: 20px;
+        }
+
+        &__text {
+            margin: 20px 0;
+            font-family: fonts.$roboto;
+            font-size: 1rem;
+            color: colors.$grey-text;
+        }
+    }
+
+    &__contact {
+        &__title {
+            margin-top: 40px;
+            font-family: fonts.$old;
+            font-weight: 400;
+            font-size: 24px;
+            color: colors.$black;
+        }
+
+        &__container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        &__img {
+            max-height: 40px;
+            max-width: 40px;
+        }
+
+        &__data {
+            &__title {
+                font-family: fonts.$old;
+                font-weight: 400;
+                font-size: 20px;
+                color: colors.$black;
+            }
+
+            &__text {
+                font-family: fonts.$roboto;
+                font-weight: 400;
+                font-size: 14px;
+                color: colors.$grey-text;
+            }
+        }
+    }
+
+    &__copyright {
+        padding: 15px 20px;
+        background-color: colors.$grey-light;
+
+        &__links {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        &__text {
+            font-family: fonts.$roboto;
+            font-weight: 700;
+            font-size: 16px;
+            color: colors.$black;
+        }
+
+        &__link {
+            text-decoration: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .footer {
+        &__content {
+            display: flex;
+            justify-content: center;
+            gap: 5%;
+            padding: 100px 0;
+        }
+
+        &__description,
+        &__contact {
+            width: 20%;
+        }
+
+        &__services{
+            width: 30%;
+            &__column{
+                margin-right: 2rem;
+            }
+        }
+
+        &__description__social-media {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        &__copyright {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 0;
+            gap: 45%;
+
+            &__links {
+                margin-top: 0;
+            }
+        }
+    }
+}
