@@ -1,5 +1,8 @@
-@use 'colors';
-@use 'fonts';
+@use './colors';
+@use './fonts';
+
+
+@use './blocks/footer';
 
 html, * {
     box-sizing: border-box;
