@@ -5,6 +5,7 @@
   width: 100%;
   height: 70px;
   background-color: #222222;
+  position: fixed;
 }
 .header__container__content__text {
   display: none;
@@ -43,6 +44,9 @@
 .header__container__content .navbar__container .nav__links .burger-icon {
   margin: 1.5rem 1rem 1.5rem 1.5rem;
 }
+.header__container__content .navbar__container .nav__links .burger-icon img {
+  padding-top: 5px;
+}
 .header__container__content .navbar__container .nav__links .nav__menu__links {
   display: block;
 }
@@ -75,15 +79,12 @@
 .header__container__content .navbar__container__icon {
   display: flex;
   align-items: center;
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 .header__container__content .navbar__container__icon__container {
   display: flex;
   align-content: center;
   justify-content: center;
-  width: 3rem;
-  height: 3rem;
-  border: 2px solid rgba(133, 133, 133, 0.3);
 }
 .header__container__content .navbar__container__icon__container img {
   width: 20px;
@@ -147,6 +148,17 @@
     font-family: "Archivo", sans-serif;
     font-weight: 600;
     margin: 1rem 0.8rem;
+  }
+  .header__container .header__container__content .navbar__container__icon {
+    margin-right: 2rem;
+  }
+  .header__container .header__container__content .navbar__container__icon__container {
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid rgba(133, 133, 133, 0.3);
+  }
+  .header__container .header__container__content .navbar__container__icon__container img {
+    width: 20px;
   }
 }
 html, * {
