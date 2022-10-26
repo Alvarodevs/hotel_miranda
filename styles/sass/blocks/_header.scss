@@ -1,0 +1,188 @@
+@use "../colors";
+@use "../fonts";
+
+.header__container {
+    width: 100%;
+    height: 70px;
+    background-color: colors.$black;
+    position: fixed;
+
+    &__content {
+        &__text {
+            display: none;
+            color: colors.$white;
+            font-family: fonts.$roboto;
+            margin-bottom: 10px;
+        }
+
+        .navbar__container {
+            background-color: colors.$white;
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0px 3px 6px rgba(colors.$black-full, 0.29);
+
+            .nav__links {
+                display: flex;
+                position: relative;
+                &__burger {
+                    display: none;
+                    .navbar__nav__list {
+                        position: absolute;
+                        list-style: none;
+                        align-items: center;
+                        top: 76px;
+                        left: 0;
+                        width: 100vw;
+                        background-color: colors.$white;
+                        &__link {
+                            font-family: fonts.$archivo;
+                            font-weight: 600;
+                            margin: 1rem 1.5rem;
+                        }
+                    }
+                }
+                .burger-icon {
+                    margin: 1.5rem 1rem 1.5rem 1.5rem;
+                    img {
+                        padding-top: 5px;
+                    }
+                }
+
+                .nav__menu__links {
+                    display: block;
+
+                    &__home {
+                        display: flex;
+
+                        &__logo {
+                            font-family: fonts.$archivo;
+                            font-size: 2rem;
+                            text-align: center;
+                            padding-top: 0.5rem;
+                            width: 3rem;
+                            height: 3rem;
+                            background-color: colors.$white;
+                            margin: 10px;
+                            box-shadow: 0px 14px 24px
+                                rgba(colors.$grey-shadow, 0.25);
+                        }
+
+                        &__text {
+                            font-family: fonts.$archivo;
+                            display: block;
+                            margin-top: 1rem;
+                            font-size: 20px;
+                            span {
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                    &__desktop {
+                        display: none;
+                    }
+                }
+            }
+
+            &__icon {
+                display: flex;
+                align-items: center;
+                margin-right: 1rem;
+
+                &__container {
+                    display: flex;
+                    align-content: center;
+                    justify-content: center;
+                    img {
+                        width: 20px;
+                    }
+                }
+                .login {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 520px) {
+    .header__container {
+        .header__container__content {
+            .navbar__container {
+                .navbar__container__icon {
+                    padding-right: 3%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .header__container {
+        height: 100px;
+        &__content {
+            padding: 1rem 10% 0 10%;
+
+            &__text {
+                display: block;
+            }
+        }
+        .header__container__content {
+            .navbar__container {
+                height: 120px;
+                .nav__links {
+                    display: flex;
+                    .burger-icon {
+                        display: none;
+                    }
+                    &__burger {
+                        display: none;
+                    }
+                    .nav__menu__links {
+                        display: flex;
+                        &__home {
+                            &__logo {
+                                font-size: 4rem;
+                                width: 5rem;
+                                height: 5rem;
+                                margin: 20px;
+                                padding-top: 0.4rem;
+                            }
+                            &__text {
+                                font-size: 26px;
+                                margin-top: 2rem;
+                            }
+                        }
+                        &__desktop {
+                            display: flex;
+                            margin: 0 0 0 3rem;
+                            .navbar__nav__list {
+                                display: flex;
+                                justify-content: space-between;
+                                list-style: none;
+                                align-items: center;
+
+                                &__link {
+                                    font-family: fonts.$archivo;
+                                    font-weight: 600;
+                                    margin: 1rem 0.8rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                &__icon {
+                    margin-right: 2rem;
+                    &__container {
+                        width: 3rem;
+                        height: 3rem;
+                        border: 2px solid rgba(colors.$grey-border, 0.3);
+                        img {
+                            width: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+} ;
