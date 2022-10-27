@@ -26,7 +26,7 @@
                 display: flex;
                 position: relative;
                 &__burger {
-                    display: none;
+                    display: block;
                     .navbar__nav__list {
                         position: absolute;
                         list-style: none;
@@ -41,11 +41,18 @@
                             margin: 1rem 1.5rem;
                         }
                     }
+                    &--show{
+                        display: none;
+                    }
                 }
                 .burger-icon {
                     margin: 1.5rem 1rem 1.5rem 1.5rem;
-                    img {
+                    &--open {
                         padding-top: 5px;
+                    }
+                    &--close{
+                        padding-top: 5px;
+                        content: url('../../../assets/icons/mobile_view/close_btn.svg');
                     }
                 }
 
