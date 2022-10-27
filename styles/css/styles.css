@@ -7,6 +7,7 @@
   background-color: #222222;
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 .header__container__content__text {
   display: none;
