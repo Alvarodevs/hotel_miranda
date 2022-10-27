@@ -1,5 +1,6 @@
 @use "../colors";
 @use "../fonts";
+@import "../buttons.scss";
 
 .upper-section {
     &__content {
@@ -23,23 +24,40 @@
         font-size: 2.8rem;
         color: colors.$white;
         margin-top: 40px;
+        margin-bottom: 40px;
         max-width: 20rem;
+    }
+    &__button {
+        display: block;
+        margin-bottom: 20px;
+        letter-spacing: 0.2rem;
+        border: 2px solid rgba(colors.$white, 0.33);
+        @include button(215px, colors.$grey-dark);
+    }
+    .button--gold {
+        border: none;
+        @include button(215px, colors.$gold-light);
     }
 }
 
-@media only screen and (min-width: 1000px){
-    .upper-section{
-        &__content{
+@media only screen and (min-width: 1000px) {
+    .upper-section {
+        &__content {
             padding: 180px 20%;
         }
 
-        &__title{
+        &__title {
             width: 20rem;
         }
 
-        &__description{
+        &__description {
             font-size: 56px;
             max-width: 25rem;
+            margin-bottom: 35px;
+        }
+        &__button{
+            display: inline;
+            margin-right: 30px;
         }
     }
 }

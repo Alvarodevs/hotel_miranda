@@ -1,0 +1,12 @@
+@use "colors";
+@use "fonts";
+
+@mixin button($w, $bgc) {
+    height: 60px;
+    width: $w;
+    background-color: $bgc;
+    text-transform: uppercase;
+    color: colors.$white;
+    font-family: fonts.$roboto;
+    font-weight: 700;
+}
