@@ -30,7 +30,6 @@
     &__button {
         display: block;
         margin-bottom: 20px;
-        letter-spacing: 0.2rem;
         border: 2px solid rgba(colors.$white, 0.33);
         @include button(215px, colors.$grey-dark);
     }

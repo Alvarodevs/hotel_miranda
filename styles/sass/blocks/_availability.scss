@@ -1,0 +1,62 @@
+@use "../colors";
+@use "../fonts";
+@import "../buttons.scss";
+
+.availability {
+    background-color: colors.$black;
+    padding: 35px 20px;
+
+    &__text {
+        font-family: fonts.$roboto;
+        font-size: 1rem;
+        color: colors.$white;
+    }
+
+    &__input {
+        width: 100%;
+        margin-bottom: 30px;
+        border: none;
+        font-size: 0.8rem;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .input__date--gold {
+        display: flex;
+        padding: 14px 0;
+        flex-direction: row-reverse;
+        background-color: transparent;
+        border-bottom: 2px solid colors.$gold-light;
+        font-family: fonts.$roboto;
+        color: colors.$grey-menu-dates;
+
+        &::-webkit-calendar-picker-indicator {
+            filter: invert(0.5) sepia(1);
+        }
+    }
+    .button--gold {
+            border: none;
+            @include button(250px, colors.$gold-light);
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .availability {
+        display: flex;
+        padding: 35px 20%;
+        align-items: center;
+        justify-content: space-between;
+
+        &__date__container {
+            display: flex;
+            gap: 30px;
+            width: 55%;
+        }
+
+        &__date {
+            width: 100%;
+        }
+    }
+}
