@@ -195,6 +195,7 @@
   text-transform: uppercase;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
+  font-weight: 700;
 }
 .upper-section .button--gold {
   border: none;
@@ -204,11 +205,12 @@
   text-transform: uppercase;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
+  font-weight: 700;
 }
 
 @media only screen and (min-width: 1000px) {
   .upper-section__content {
-    padding: 180px 20%;
+    padding: 180px 20% 75px 20%;
   }
   .upper-section__title {
     width: 20rem;
