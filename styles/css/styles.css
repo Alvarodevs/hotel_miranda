@@ -205,7 +205,6 @@
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 14px;
   letter-spacing: 0.2rem;
 }
 .upper-section .button--gold {
@@ -217,7 +216,6 @@
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 14px;
   letter-spacing: 0.2rem;
 }
 
@@ -277,7 +275,6 @@
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 14px;
   letter-spacing: 0.2rem;
 }
 
@@ -299,8 +296,11 @@
 }
 .about {
   margin-top: 60px;
+  position: relative;
+}
+.about__discover {
+  background-color: #F9F9F9;
   padding: 30px 20px;
-  background-color: #f9f9f9;
 }
 .about__discover__title {
   font-family: "Old Standard TT", serif;
@@ -312,7 +312,6 @@
   font-family: "Archivo", sans-serif;
   font-size: 13px;
   font-weight: 700;
-  margin-top: 10px;
   margin-bottom: 32px;
 }
 .about__discover__description {
@@ -322,7 +321,7 @@
   margin-bottom: 24px;
 }
 .about__discover .button-gold {
-  margin-bottom: 60px;
+  margin-bottom: 145px;
   border: none;
   height: 60px;
   width: 216px;
@@ -331,8 +330,54 @@
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 14px;
   letter-spacing: 0.2rem;
+}
+.about__cards {
+  padding: 0 20px;
+}
+.about__card {
+  width: 270px;
+  height: 300px;
+  margin: auto auto 20rem auto;
+}
+.about__card--team {
+  margin-top: -5rem;
+}
+.about__card__img {
+  object-fit: cover;
+  width: inherit;
+  height: inherit;
+}
+.about__card__description {
+  position: relative;
+  text-align: center;
+  padding: 50px 0;
+}
+.about__card__description__img {
+  width: 70px;
+  height: 50px;
+  margin-bottom: 30px;
+}
+.about__card__description__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.about__card__description__text {
+  font-family: "Roboto", sans-serif;
+}
+.about__card__description__bg {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 145px;
+  height: 105px;
+  opacity: 0.1;
+}
+.about__card__description--black {
+  background-color: #222222;
+  color: #ffffff;
+  margin-top: -0.3rem;
 }
 
 @media only screen and (min-width: 1000px) {

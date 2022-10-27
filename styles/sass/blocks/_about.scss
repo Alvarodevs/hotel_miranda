@@ -4,10 +4,11 @@
 
 .about {
     margin-top: 60px;
-    padding: 30px 20px;
-    background-color: colors.$grey-discover;
+    position: relative;
 
     &__discover {
+        background-color: colors.$grey-discover;
+        padding: 30px 20px;
         &__title {
             font-family: fonts.$old;
             font-size: 3rem;
@@ -18,7 +19,6 @@
                 font-family: fonts.$archivo;
                 font-size: 13px;
                 font-weight: 700;
-                margin-top: 10px;
                 margin-bottom: 32px;
             }
         }
@@ -29,9 +29,65 @@
             margin-bottom: 24px;
         }
         .button-gold {
-            margin-bottom: 60px;
+            margin-bottom: 145px;
             border: none;
-            @include button(216px, colors.$gold-light)
+            @include button(216px, colors.$gold-light);
+        }
+    }
+
+    &__cards {
+        padding: 0 20px;
+    }
+
+    &__card {
+        width: 270px;
+        height: 300px;
+        margin: auto auto 20rem auto;
+
+        &--team {
+            margin-top: -5rem;
+        }
+
+        &__img {
+            object-fit: cover;
+            width: inherit;
+            height: inherit;
+        }
+        &__description {
+            position: relative;
+            text-align: center;
+            padding: 50px 0;
+
+            &__img {
+                width: 70px;
+                height: 50px;
+                margin-bottom: 30px;
+            }
+
+            &__title {
+                font-family: fonts.$old;
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+
+            &__text {
+                font-family: fonts.$roboto;
+            }
+
+            &__bg{
+                position:absolute;
+                top: 50px;
+                right: 0;
+                width: 145px;
+                height: 105px;
+                opacity: 0.1;
+            }
+
+            &--black{
+                background-color: colors.$black;
+                color: colors.$white;
+                margin-top: -0.3rem;
+            }
         }
     }
 }
