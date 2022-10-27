@@ -39,7 +39,7 @@
 .header__container__content .navbar__container .nav__links__burger .navbar__nav__list__link {
   font-family: "Archivo", sans-serif;
   font-weight: 600;
-  margin: 1rem 1.5rem;
+  margin: 1.5rem;
 }
 .header__container__content .navbar__container .nav__links__burger--show {
   display: none;
