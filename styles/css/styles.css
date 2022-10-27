@@ -27,10 +27,11 @@
   display: none;
 }
 .header__container__content .navbar__container .nav__links__burger .navbar__nav__list {
+  z-index: -1;
   position: absolute;
   list-style: none;
   align-items: center;
-  top: 76px;
+  top: 70px;
   left: 0;
   width: 100vw;
   background-color: #ffffff;
@@ -38,7 +39,7 @@
 .header__container__content .navbar__container .nav__links__burger .navbar__nav__list__link {
   font-family: "Archivo", sans-serif;
   font-weight: 600;
-  margin: 1rem 1.5rem;
+  margin: 1.2rem 1.5rem;
 }
 .header__container__content .navbar__container .nav__links .burger-icon {
   margin: 1.5rem 1rem 1.5rem 1.5rem;
