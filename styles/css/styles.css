@@ -165,24 +165,33 @@
   background-color: #333333;
 }
 .upper-section__title {
-  width: 10rem;
+  width: 15rem;
   font-family: "Roboto", sans-serif;
   font-size: 13px;
+  font-weight: 700;
   color: #ffffff;
   margin-top: 40px;
   text-transform: uppercase;
+  letter-spacing: 0.2rem;
 }
 .upper-section__description {
   font-family: "Old Standard TT", serif;
-  font-size: 2.9rem;
+  font-size: 2.8rem;
   color: #ffffff;
   margin-top: 40px;
-  max-width: 25rem;
+  max-width: 20rem;
 }
 
-@media only screen and (min-width: 370) {
+@media only screen and (min-width: 1000px) {
+  .upper-section__content {
+    padding: 180px 20%;
+  }
+  .upper-section__title {
+    width: 20rem;
+  }
   .upper-section__description {
-    font-size: 3rem;
+    font-size: 56px;
+    max-width: 25rem;
   }
 }
 .footer__content {

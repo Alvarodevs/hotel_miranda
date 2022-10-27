@@ -8,27 +8,38 @@
     }
 
     &__title {
-        width: 10rem;
+        width: 15rem;
         font-family: fonts.$roboto;
         font-size: 13px;
+        font-weight: 700;
         color: colors.$white;
         margin-top: 40px;
         text-transform: uppercase;
+        letter-spacing: 0.2rem;
     }
 
     &__description {
         font-family: fonts.$old;
-        font-size: 2.9rem;
+        font-size: 2.8rem;
         color: colors.$white;
         margin-top: 40px;
-        max-width: 25rem;
+        max-width: 20rem;
     }
 }
 
-@media only screen and (min-width: 370) {
-    .upper-section {
-        &__description {
-            font-size: 3rem;
+@media only screen and (min-width: 1000px){
+    .upper-section{
+        &__content{
+            padding: 180px 20%;
+        }
+
+        &__title{
+            width: 20rem;
+        }
+
+        &__description{
+            font-size: 56px;
+            max-width: 25rem;
         }
     }
 }
