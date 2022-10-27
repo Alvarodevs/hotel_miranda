@@ -1,0 +1,34 @@
+@use "../colors";
+@use "../fonts";
+
+.upper-section {
+    &__content {
+        padding: 75px 20px;
+        background-color: colors.$grey-dark;
+    }
+
+    &__title {
+        width: 10rem;
+        font-family: fonts.$roboto;
+        font-size: 13px;
+        color: colors.$white;
+        margin-top: 40px;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        font-family: fonts.$old;
+        font-size: 2.9rem;
+        color: colors.$white;
+        margin-top: 40px;
+        max-width: 25rem;
+    }
+}
+
+@media only screen and (min-width: 370) {
+    .upper-section {
+        &__description {
+            font-size: 3rem;
+        }
+    }
+}

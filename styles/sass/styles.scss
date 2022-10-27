@@ -1,11 +1,11 @@
 @use './colors';
 @use './fonts';
 
-
-@use './blocks/footer';
-
 //Blocks import
 @use './blocks/header';
+@use './blocks/upper-section';
+@use './blocks/footer';
+
 
 html, * {
     box-sizing: border-box;
