@@ -1,19 +1,73 @@
 @use "../colors";
 @use "../fonts";
 
-.rooms{
-    padding: 60px 20px;
-    p{
+.rooms {
+    padding: 60px 0;
+    p {
         text-align: center;
     }
-    &__title{
-        
+    &__title {
         font-family: fonts.$old;
-        font-size: 56px;
-        &--small{
+        font-size: 50px;
+        &--small {
             font-size: 14px;
             font-family: fonts.$archivo;
             margin-bottom: 24px;
+            color: colors.$grey-text;
+            letter-spacing: 3px;
+        }
+    }
+
+    .swiper {
+        margin: 45px 0;
+        z-index: 0;
+        &-wrapper {
+            // .room__img{
+            //     background-image: url('/assets/images/lux-hotel.jpg');
+            //     width: 375px;
+            //     height: 245px;
+            //     background-size: cover;
+            //     background-position: center;
+            //     margin: auto;
+            // }
+        }
+        &-button {
+            width: 32px;
+            height: 32px;
+            margin: auto;
+            margin-top: -3rem;
+            padding: 12px;
+            background-color: colors.$white;
+            color: colors.$black;
+            
+            &-next {
+                content: url("/assets/icons/chevron-right.svg");
+            }
+
+            &-prev {
+                content: url("/assets/icons/chevron-left.svg");
+            }
+
+            &:hover {
+                background-color: colors.$gold-light;
+                svg {
+                    color: colors.$white;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .rooms {
+        padding: 0;
+
+        .swiper {
+            &__button {
+                width: 80px;
+                height: 80px;
+                padding: 10px;
+            }
         }
     }
 }

@@ -312,6 +312,9 @@
   font-size: 13px;
   font-weight: 700;
   margin-bottom: 32px;
+  color: #777777;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 .about__discover__description {
   font-family: "Archivo", sans-serif;
@@ -428,19 +431,80 @@
   }
 }
 .rooms {
-  padding: 60px 20px;
+  padding: 60px 0;
 }
 .rooms p {
   text-align: center;
 }
 .rooms__title {
   font-family: "Old Standard TT", serif;
-  font-size: 56px;
+  font-size: 50px;
 }
 .rooms__title--small {
   font-size: 14px;
   font-family: "Archivo", sans-serif;
   margin-bottom: 24px;
+  color: #777777;
+  letter-spacing: 3px;
+}
+.rooms .swiper {
+  margin: 45px 0;
+  z-index: 0;
+}
+.rooms .swiper-button {
+  width: 32px;
+  height: 32px;
+  margin: auto;
+  margin-top: -3rem;
+  padding: 12px;
+  background-color: #ffffff;
+  color: #222222;
+}
+.rooms .swiper-button-next {
+  content: url("/assets/icons/chevron-right.svg");
+}
+.rooms .swiper-button-prev {
+  content: url("/assets/icons/chevron-left.svg");
+}
+.rooms .swiper-button:hover {
+  background-color: #bead8e;
+}
+.rooms .swiper-button:hover svg {
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 1000px) {
+  .rooms {
+    padding: 0;
+  }
+  .rooms .swiper__button {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+  }
+}
+.swiper-slide .room__img {
+  background-image: url("/assets/images/lux-hotel.jpg");
+  width: 375px;
+  height: 245px;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+.swiper-slide .room__info {
+  padding: 0 20px;
+  margin-top: -2rem;
+  background-color: #ffffff;
+}
+.swiper-slide .room__info__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 28px;
+  color: #222222;
+}
+.swiper-slide .room__info__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #777777;
 }
 
 .footer__content {

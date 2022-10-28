@@ -1,0 +1,35 @@
+@use "../colors";
+@use "../fonts";
+
+.swiper-slide {
+    .room {
+    &__img {
+        background-image: url("/assets/images/lux-hotel.jpg");
+        width: 375px;
+        height: 245px;
+        background-size: cover;
+        background-position: center;
+        margin: auto;
+    }
+
+    &__info{
+        padding: 0 20px;
+        margin-top: -2rem;
+        background-color: colors.$white;
+
+        &__title{
+            font-family: fonts.$old;
+            font-size: 28px;
+            color: colors.$black;
+        }
+
+        &__description{
+            font-family: fonts.$roboto;
+            font-size: 14px;
+            color: colors.$grey-text
+        }
+    }
+}
+
+
+}

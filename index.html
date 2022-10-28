@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Miranda</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/css/styles.css" />
 </head>
 
@@ -108,7 +109,7 @@
                 ut aliquip ex ea commodo consequat.</p>
             <button class="button-gold about__discover__button">BOOK NOW</button>
         </div>
-    
+
         <div class="about__cards">
             <div class="about__card about__card--team">
                 <div class="about__card__img"></div>
@@ -121,7 +122,7 @@
                     <img class="about__card__description__bg" src="./assets/icons/home_page/team.svg" alt="Team">
                 </div>
             </div>
-    
+
             <div class="about__card about__card--room">
                 <div class="about__card__img"></div>
                 <div class="about__card__description about__card__description--black">
@@ -143,7 +144,71 @@
     <section class="rooms">
         <p class="rooms__title--small">ROOMS</p>
         <p class="rooms__title">Hand Picked Rooms</p>
-    </section>    
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="room">
+                        <div class="room__img"></div>
+                        <div class="room__info">
+                            <div class="room__info__text">
+                                <p class="room__info__text__title">Minimal Duplex Room</p>
+                                <p class="room__info__text__description">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                            </div>
+                            <div class="room__info__price">
+                                <span class="room__info__amount">$375</span>
+                                <span class="room__info__night">/Night</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="room">
+                        <div class="room__img"></div>
+                        <div class="room__info">
+                            <div class="room__info__text">
+                                <p class="room__info__text__title">Minimal Duplex Room</p>
+                                <p class="room__info__text__description">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                            </div>
+                            <div class="room__info__price">
+                                <span class="room__info__amount">$375</span>
+                                <span class="room__info__night">/Night</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="room">
+                        <div class="room__img"></div>
+                        <div class="room__info">
+                            <div class="room__info__text">
+                                <p class="room__info__text__title">Minimal Duplex Room</p>
+                                <p class="room__info__text__description">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                            </div>
+                            <div class="room__info__price">
+                                <span class="room__info__amount">$375</span>
+                                <span class="room__info__night">/Night</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Nav btns -->
+            <div class="swiper-button swiper-button-next"></div>
+            <div class="swiper-button swiper-button-prev"></div>
+        </div>
+    </section>
 
 
     <!-- FOOTER -->
@@ -251,8 +316,9 @@
         </div>
     </footer>
 
-
-    <script type="module" src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module" src="/js/index.js"></script>
+    <script type="module" src="/js/swiper.js"></script>
 </body>
 
 </html>

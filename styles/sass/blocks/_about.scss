@@ -19,6 +19,9 @@
                 font-size: 13px;
                 font-weight: 700;
                 margin-bottom: 32px;
+                color: colors.$grey-text;
+                text-transform: uppercase;
+                letter-spacing: 3px;
             }
         }
         &__description {
