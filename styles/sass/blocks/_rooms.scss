@@ -1,0 +1,19 @@
+@use "../colors";
+@use "../fonts";
+
+.rooms{
+    padding: 60px 20px;
+    p{
+        text-align: center;
+    }
+    &__title{
+        
+        font-family: fonts.$old;
+        font-size: 56px;
+        &--small{
+            font-size: 14px;
+            font-family: fonts.$archivo;
+            margin-bottom: 24px;
+        }
+    }
+}

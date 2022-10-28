@@ -427,6 +427,22 @@
     margin-top: 1rem;
   }
 }
+.rooms {
+  padding: 60px 20px;
+}
+.rooms p {
+  text-align: center;
+}
+.rooms__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+}
+.rooms__title--small {
+  font-size: 14px;
+  font-family: "Archivo", sans-serif;
+  margin-bottom: 24px;
+}
+
 .footer__content {
   padding: 0 20px;
   background-image: url("../../../assets/images/footer-background.svg");
