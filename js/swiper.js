@@ -7,6 +7,8 @@ const swiper = new Swiper(".swiper", {
     },
     enabled: true,
     effect: 'slide',
+    slideNextClass: 'swiper-slide-next',
+    slidePrevClass: 'swiper-slide-prev',
     breakpointsBase: 'window',
     breakpoints: {
         320: {

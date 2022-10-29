@@ -465,19 +465,30 @@
 }
 .rooms .swiper-button:hover {
   background-color: #bead8e;
-}
-.rooms .swiper-button:hover svg {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
+@media only screen and (min-width: 395px) {
+  .rooms .swiper-button {
+    margin: -6rem 10% 0 10%;
+    width: 40px;
+    height: 40px;
+  }
+}
 @media only screen and (min-width: 1000px) {
   .rooms {
     padding: 0;
   }
-  .rooms .swiper__button {
+  .rooms .swiper-button {
     width: 80px;
     height: 80px;
-    padding: 10px;
+    padding: 30px;
+  }
+  .rooms .swiper-button-next {
+    margin-right: 10%;
+  }
+  .rooms .swiper-button-prev {
+    margin-left: 10%;
   }
 }
 .room__img {

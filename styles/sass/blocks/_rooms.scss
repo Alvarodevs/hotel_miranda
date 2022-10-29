@@ -31,20 +31,37 @@
             color: colors.$black;
 
             &-next {
-                //margin-right: 20%; VISTA DESKTOP
                 content: url("/assets/icons/chevron-right.svg");
+
+                // ::after{
+                //     content:'';
+                // }
             }
 
             &-prev {
                 content: url("/assets/icons/chevron-left.svg");
+                // ::after{
+                //     content:'';
+                // }
             }
 
             &:hover {
                 background-color: colors.$gold-light;
-                svg {
-                    color: colors.$white;
-                }
+                color: colors.$white !important;
             }
+        }
+        // .swiper-slide-next{
+        //     font-size: 10px;
+        // }
+    }
+}
+
+@media only screen and (min-width: 395px) {
+    .rooms {
+        .swiper-button {
+            margin: -6rem 10% 0 10%;
+            width: 40px;
+            height: 40px;
         }
     }
 }
@@ -54,10 +71,17 @@
         padding: 0;
 
         .swiper {
-            &__button {
+            &-button {
                 width: 80px;
                 height: 80px;
-                padding: 10px;
+                padding: 30px;
+
+                &-next {
+                    margin-right: 10%;
+                }
+                &-prev {
+                    margin-left: 10%;
+                }
             }
         }
     }
