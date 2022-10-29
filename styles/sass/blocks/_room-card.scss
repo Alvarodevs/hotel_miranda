@@ -3,33 +3,48 @@
 
 .swiper-slide {
     .room {
-    &__img {
-        background-image: url("/assets/images/lux-hotel.jpg");
-        width: 375px;
-        height: 245px;
-        background-size: cover;
-        background-position: center;
-        margin: auto;
-    }
-
-    &__info{
-        padding: 0 20px;
-        margin-top: -2rem;
-        background-color: colors.$white;
-
-        &__title{
-            font-family: fonts.$old;
-            font-size: 28px;
-            color: colors.$black;
+        &__img {
+            background-image: url("/assets/images/lux-hotel.jpg");
+            width: 375px;
+            height: 245px;
+            background-size: cover;
+            background-position: center;
+            margin: auto;
         }
 
-        &__description{
-            font-family: fonts.$roboto;
-            font-size: 14px;
-            color: colors.$grey-text
+        &__info {
+            padding: 0 20px;
+            background-color: colors.$white;
+            width: 335px;
+            margin: auto;
+            &__text {
+                margin-top: -1rem;
+                padding-top: 20px;
+                &__title {
+                    font-family: fonts.$old;
+                    font-size: 28px;
+                    color: colors.$black;
+                }
+
+                &__description {
+                    font-family: fonts.$roboto;
+                    font-size: 14px;
+                    color: colors.$grey-text;
+                    margin: 12px 0;
+                }
+            }
+
+            &__price{
+                font-family: fonts.$archivo;
+                color: colors.$gold-light;
+                text-align: center;
+                &__amount{
+                    font-size: 32px;
+                }
+                &__night{
+                    font-size: 13px;
+                }
+            }
         }
     }
-}
-
-
 }

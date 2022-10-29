@@ -493,18 +493,35 @@
 }
 .swiper-slide .room__info {
   padding: 0 20px;
-  margin-top: -2rem;
   background-color: #ffffff;
+  width: 335px;
+  margin: auto;
 }
-.swiper-slide .room__info__title {
+.swiper-slide .room__info__text {
+  margin-top: -1rem;
+  padding-top: 20px;
+}
+.swiper-slide .room__info__text__title {
   font-family: "Old Standard TT", serif;
   font-size: 28px;
   color: #222222;
 }
-.swiper-slide .room__info__description {
+.swiper-slide .room__info__text__description {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: #777777;
+  margin: 12px 0;
+}
+.swiper-slide .room__info__price {
+  font-family: "Archivo", sans-serif;
+  color: #bead8e;
+  text-align: center;
+}
+.swiper-slide .room__info__price__amount {
+  font-size: 32px;
+}
+.swiper-slide .room__info__price__night {
+  font-size: 13px;
 }
 
 .footer__content {
