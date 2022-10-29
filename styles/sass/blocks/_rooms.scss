@@ -3,12 +3,12 @@
 
 .rooms {
     padding: 60px 0;
-    p {
-        text-align: center;
-    }
+
     &__title {
         font-family: fonts.$old;
         font-size: 50px;
+        text-align: center;
+
         &--small {
             font-size: 14px;
             font-family: fonts.$archivo;
@@ -21,17 +21,17 @@
     .swiper {
         margin: 45px 0;
         z-index: 0;
-        
+
         &-button {
             width: 32px;
             height: 32px;
-            margin: auto;
-            margin-top: -3rem;
+            margin-top: -6rem;
             padding: 12px;
             background-color: colors.$white;
             color: colors.$black;
-            
+
             &-next {
+                //margin-right: 20%; VISTA DESKTOP
                 content: url("/assets/icons/chevron-right.svg");
             }
 

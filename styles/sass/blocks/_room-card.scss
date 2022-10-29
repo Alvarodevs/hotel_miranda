@@ -1,48 +1,81 @@
 @use "../colors";
 @use "../fonts";
 
-.swiper-slide {
-    .room {
-        &__img {
-            background-image: url("/assets/images/lux-hotel.jpg");
-            width: 375px;
-            height: 245px;
-            background-size: cover;
-            background-position: center;
-            margin: auto;
-        }
+.room {
+    &__img {
+        background-image: url("/assets/images/lux-hotel.jpg");
+        width: 375px;
+        height: 245px;
+        background-size: cover;
+        background-position: center;
+        margin: auto;
+    }
 
-        &__info {
-            padding: 0 20px;
-            background-color: colors.$white;
-            width: 335px;
-            margin: auto;
-            &__text {
-                margin-top: -1rem;
-                padding-top: 20px;
-                &__title {
-                    font-family: fonts.$old;
-                    font-size: 28px;
-                    color: colors.$black;
-                }
+    &__info {
+        padding: 20px 20px;
+        background-color: colors.$white;
+        width: 335px;
+        margin: auto;
+        margin-top: -1rem;
+        text-align: center;
 
-                &__description {
-                    font-family: fonts.$roboto;
-                    font-size: 14px;
-                    color: colors.$grey-text;
-                    margin: 12px 0;
-                }
+        &__text {
+            &__title {
+                font-family: fonts.$old;
+                font-size: 28px;
+                color: colors.$black;
             }
 
-            &__price{
-                font-family: fonts.$archivo;
-                color: colors.$gold-light;
-                text-align: center;
-                &__amount{
-                    font-size: 32px;
+            &__description {
+                font-family: fonts.$roboto;
+                font-size: 14px;
+                color: colors.$grey-text;
+                margin: 12px 0;
+            }
+        }
+
+        &__price {
+            font-family: fonts.$archivo;
+            color: colors.$gold-light;
+            text-align: center;
+            &__amount {
+                font-size: 32px;
+            }
+            &__night {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .room {
+        &__img {
+            width: 770px;
+            height: 500px;
+        }
+        &__info {
+            display: flex;
+            width: 690px;
+            height: 172px;
+            text-align: start;
+            &__text {
+                text-align: start;
+                &__title{
+                    font-size: 36px;
                 }
-                &__night{
-                    font-size: 13px;
+            }
+            &__price {
+                margin: auto;
+                display: flex;
+                height: 40px;
+                align-items: flex-end;
+                &__amount {
+                    font-size: 40px;
+                }
+                &__night {
+                    font-size: 16px;
+                    padding-bottom: 5px;
                 }
             }
         }

@@ -433,12 +433,10 @@
 .rooms {
   padding: 60px 0;
 }
-.rooms p {
-  text-align: center;
-}
 .rooms__title {
   font-family: "Old Standard TT", serif;
   font-size: 50px;
+  text-align: center;
 }
 .rooms__title--small {
   font-size: 14px;
@@ -454,8 +452,7 @@
 .rooms .swiper-button {
   width: 32px;
   height: 32px;
-  margin: auto;
-  margin-top: -3rem;
+  margin-top: -6rem;
   padding: 12px;
   background-color: #ffffff;
   color: #222222;
@@ -483,7 +480,7 @@
     padding: 10px;
   }
 }
-.swiper-slide .room__img {
+.room__img {
   background-image: url("/assets/images/lux-hotel.jpg");
   width: 375px;
   height: 245px;
@@ -491,39 +488,68 @@
   background-position: center;
   margin: auto;
 }
-.swiper-slide .room__info {
-  padding: 0 20px;
+.room__info {
+  padding: 20px 20px;
   background-color: #ffffff;
   width: 335px;
   margin: auto;
-}
-.swiper-slide .room__info__text {
   margin-top: -1rem;
-  padding-top: 20px;
+  text-align: center;
 }
-.swiper-slide .room__info__text__title {
+.room__info__text__title {
   font-family: "Old Standard TT", serif;
   font-size: 28px;
   color: #222222;
 }
-.swiper-slide .room__info__text__description {
+.room__info__text__description {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: #777777;
   margin: 12px 0;
 }
-.swiper-slide .room__info__price {
+.room__info__price {
   font-family: "Archivo", sans-serif;
   color: #bead8e;
   text-align: center;
 }
-.swiper-slide .room__info__price__amount {
+.room__info__price__amount {
   font-size: 32px;
 }
-.swiper-slide .room__info__price__night {
+.room__info__price__night {
   font-size: 13px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .room__img {
+    width: 770px;
+    height: 500px;
+  }
+  .room__info {
+    display: flex;
+    width: 690px;
+    height: 172px;
+    text-align: start;
+  }
+  .room__info__text {
+    text-align: start;
+  }
+  .room__info__text__title {
+    font-size: 36px;
+  }
+  .room__info__price {
+    margin: auto;
+    display: flex;
+    height: 40px;
+    align-items: flex-end;
+  }
+  .room__info__price__amount {
+    font-size: 40px;
+  }
+  .room__info__price__night {
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+}
 .footer__content {
   padding: 0 20px;
   background-image: url("../../../assets/images/footer-background.svg");
