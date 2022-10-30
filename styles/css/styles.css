@@ -447,6 +447,7 @@
 }
 .rooms .swiper {
   margin: 45px 0;
+  overflow: visible;
 }
 .rooms .swiper-button {
   width: 32px;
@@ -489,9 +490,6 @@
     margin-left: 10%;
   }
 }
-.room {
-  z-index: 1;
-}
 .room__main-container {
   position: relative;
 }
@@ -504,12 +502,12 @@
   margin: auto;
 }
 .room__bar {
-  background-color: #ffffff !important;
+  background-color: #ffffff;
   width: 256px;
   height: 40px;
   margin: auto;
   position: absolute;
-  top: -0.9rem;
+  top: -1.5rem;
   left: 0;
   right: 0;
   padding: 0 26px;
@@ -526,9 +524,11 @@
   padding: 20px 20px;
   background-color: #ffffff;
   width: 335px;
-  margin: auto;
-  margin-top: -1rem;
+  margin: 14rem auto auto auto;
   text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 .room__info__text__title {
   font-family: "Old Standard TT", serif;
@@ -572,6 +572,7 @@
     height: 172px;
     text-align: start;
     padding: 38px 38px;
+    margin: 28rem auto auto auto;
   }
   .room__info__text {
     text-align: start;
