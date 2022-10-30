@@ -3,7 +3,6 @@
 
 .rooms {
     padding: 60px 0;
-
     &__title {
         font-family: fonts.$old;
         font-size: 50px;
@@ -20,7 +19,7 @@
 
     .swiper {
         margin: 45px 0;
-        z-index: 0;
+        //z-index: -1;
 
         &-button {
             width: 32px;
@@ -31,28 +30,21 @@
             color: colors.$black;
 
             &-next {
-                content: url("/assets/icons/chevron-right.svg");
-
-                // ::after{
-                //     content:'';
-                // }
+                content: url("/assets/icons/chevron-right.svg");  
             }
 
             &-prev {
                 content: url("/assets/icons/chevron-left.svg");
-                // ::after{
-                //     content:'';
-                // }
             }
 
             &:hover {
+                
                 background-color: colors.$gold-light;
-                color: colors.$white !important;
+                // color: colors.$white !important;
+                // fill: colors.$white !important;
             }
         }
-        // .swiper-slide-next{
-        //     font-size: 10px;
-        // }
+        
     }
 }
 

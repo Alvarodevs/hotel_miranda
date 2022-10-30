@@ -2,6 +2,10 @@
 @use "../fonts";
 
 .room {
+   z-index: 1;
+    &__main-container {
+        position: relative;
+    }
     &__img {
         background-image: url("/assets/images/lux-hotel.jpg");
         width: 375px;
@@ -10,7 +14,25 @@
         background-position: center;
         margin: auto;
     }
-
+    &__bar {
+        background-color: colors.$white !important;
+        width: 256px;
+        height: 40px;
+        margin: auto;
+        position: absolute;
+        top: -0.9rem;
+        left: 0;
+        right: 0;
+        padding: 0 26px;
+        display: flex;
+        justify-content: space-evenly;
+        &__icon {
+            width: 12px;
+            height: 12px;
+            margin: auto;
+            display: inline-block;
+        }
+    }
     &__info {
         padding: 20px 20px;
         background-color: colors.$white;
@@ -54,14 +76,23 @@
             width: 770px;
             height: 500px;
         }
+        &__bar {
+            width: 310px;
+            height: 50px;
+            &__icon {
+                width: 20px;
+                height: 15px;
+            }
+        }
         &__info {
             display: flex;
             width: 690px;
             height: 172px;
             text-align: start;
+            padding: 38px 38px;
             &__text {
                 text-align: start;
-                &__title{
+                &__title {
                     font-size: 36px;
                 }
             }

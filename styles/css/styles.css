@@ -8,7 +8,7 @@
   background-color: #222222;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 10;
 }
 .header__container__content__text {
   display: none;
@@ -447,7 +447,6 @@
 }
 .rooms .swiper {
   margin: 45px 0;
-  z-index: 0;
 }
 .rooms .swiper-button {
   width: 32px;
@@ -465,7 +464,6 @@
 }
 .rooms .swiper-button:hover {
   background-color: #bead8e;
-  color: #ffffff !important;
 }
 
 @media only screen and (min-width: 395px) {
@@ -491,6 +489,12 @@
     margin-left: 10%;
   }
 }
+.room {
+  z-index: 1;
+}
+.room__main-container {
+  position: relative;
+}
 .room__img {
   background-image: url("/assets/images/lux-hotel.jpg");
   width: 375px;
@@ -498,6 +502,25 @@
   background-size: cover;
   background-position: center;
   margin: auto;
+}
+.room__bar {
+  background-color: #ffffff !important;
+  width: 256px;
+  height: 40px;
+  margin: auto;
+  position: absolute;
+  top: -0.9rem;
+  left: 0;
+  right: 0;
+  padding: 0 26px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.room__bar__icon {
+  width: 12px;
+  height: 12px;
+  margin: auto;
+  display: inline-block;
 }
 .room__info {
   padding: 20px 20px;
@@ -535,11 +558,20 @@
     width: 770px;
     height: 500px;
   }
+  .room__bar {
+    width: 310px;
+    height: 50px;
+  }
+  .room__bar__icon {
+    width: 20px;
+    height: 15px;
+  }
   .room__info {
     display: flex;
     width: 690px;
     height: 172px;
     text-align: start;
+    padding: 38px 38px;
   }
   .room__info__text {
     text-align: start;
