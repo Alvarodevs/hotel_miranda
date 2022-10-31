@@ -20,10 +20,10 @@
     .swiper {
         margin: 45px 0;
         overflow: visible;
+        position: relative;
         &-button {
             width: 32px;
             height: 32px;
-            margin-top: -6rem;
             padding: 12px;
             background-color: colors.$white;
             color: colors.$black;
@@ -50,7 +50,7 @@
 @media only screen and (min-width: 395px) {
     .rooms {
         .swiper-button {
-            margin: -6rem 10% 0 10%;
+            margin: -1rem 10% 0 10%;
             width: 40px;
             height: 40px;
         }
@@ -66,7 +66,8 @@
                 width: 80px;
                 height: 80px;
                 padding: 30px;
-
+                position: absolute;
+                top:15rem;
                 &-next {
                     margin-right: 10%;
                 }
