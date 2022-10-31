@@ -11,5 +11,7 @@ const swiper = new Swiper(".swiper-facilities", {
     pagination: {
         el: '.swiper-facilities__pagination',
         type: 'bullets',
+        clickable: true,
     },
+    
 });
