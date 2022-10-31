@@ -469,6 +469,9 @@
 }
 
 @media only screen and (min-width: 395px) {
+  .rooms .swiper-slide {
+    margin: 0 10rem;
+  }
   .rooms .swiper-button {
     margin: -1rem 10% 0 10%;
     width: 40px;
@@ -564,6 +567,7 @@
   .room__bar {
     width: 310px;
     height: 50px;
+    margin-left: 14rem;
   }
   .room__bar__icon {
     width: 20px;
@@ -575,7 +579,7 @@
     height: 172px;
     text-align: start;
     padding: 38px 38px;
-    margin: 28rem auto auto auto;
+    margin: 28rem auto auto 2.5rem;
   }
   .room__info__text {
     text-align: start;

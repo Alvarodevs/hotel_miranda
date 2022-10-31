@@ -1,22 +1,21 @@
 const swiper = new Swiper(".swiper", {
     direction: 'horizontal',
     loop: true,
-    slidesPerview: 1,
+    slidesPerView: 1,
+    spaceBeween: 30,
     autoplay: {
         delay: 5000,
     },
+    centeredSlides: true,
     enabled: true,
     effect: 'slide',
     slideNextClass: 'swiper-slide-next',
     slidePrevClass: 'swiper-slide-prev',
     breakpointsBase: 'window',
     breakpoints: {
-        320: {
-            slidesPerview: 1,
-        },
         1000: {
-            slidesPerview: 3,
-            spaceBetween: 30,
+            slidesPerView: 3,
+            spaceBeween: 50,
         }
     },
     navigation: {
