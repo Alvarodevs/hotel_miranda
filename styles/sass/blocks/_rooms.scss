@@ -29,7 +29,7 @@
             color: colors.$black;
 
             &-next {
-                content: url("/assets/icons/chevron-right.svg");  
+                content: url("/assets/icons/chevron-right.svg");
             }
 
             &-prev {
@@ -37,22 +37,25 @@
             }
 
             &:hover {
-                
                 background-color: colors.$gold-light;
                 // color: colors.$white !important;
                 // fill: colors.$white !important;
             }
         }
-        
     }
 }
 
 @media only screen and (min-width: 395px) {
     .rooms {
-        .swiper-button {
-            margin: -1rem 10% 0 10%;
-            width: 40px;
-            height: 40px;
+        .swiper {
+            &-slide{
+                margin: 0 10rem;
+            }
+            &-button {
+                margin: -1rem 10% 0 10%;
+                width: 40px;
+                height: 40px;
+            }
         }
     }
 }
@@ -67,7 +70,7 @@
                 height: 80px;
                 padding: 30px;
                 position: absolute;
-                top:15rem;
+                top: 15rem;
                 &-next {
                     margin-right: 10%;
                 }
