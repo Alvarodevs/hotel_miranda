@@ -1,0 +1,59 @@
+@use "../colors";
+@use "../fonts";
+
+.facilities {
+    padding: 60px 24px;
+
+    &__title {
+        font-family: fonts.$old;
+        font-size: 56px;
+        text-align: center;
+
+        &--small {
+            font-family: fonts.$archivo;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+    }
+    .card {
+        position: relative;
+        padding: 0 15px;
+        &__img {
+            margin: 60px 0 40px 0;
+            &-background {
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-family: fonts.$archivo;
+                font-size: 120px;
+                color: colors.$grey-dark;
+                opacity: 4%;
+                font-weight: 700;
+            }
+        }
+        &__title {
+            font-family: fonts.$old;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+        &__description {
+            font-family: fonts.$archivo;
+            font-size: 14px;
+            color: colors.$grey-text;
+            padding-right: 45px;
+        }
+    }
+    .swiper-facilities {
+        &__pagination {
+            margin-top: 32px; 
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .swiper-pagination-bullet-active{
+        background-color: colors.$gold-light;
+    }
+}

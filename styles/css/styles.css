@@ -687,6 +687,59 @@
     right: 0;
   }
 }
+.facilities {
+  padding: 60px 24px;
+}
+.facilities__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  text-align: center;
+}
+.facilities__title--small {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.facilities .card {
+  position: relative;
+  padding: 0 15px;
+}
+.facilities .card__img {
+  margin: 60px 0 40px 0;
+}
+.facilities .card__img-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: "Archivo", sans-serif;
+  font-size: 120px;
+  color: #333333;
+  opacity: 4%;
+  font-weight: 700;
+}
+.facilities .card__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.facilities .card__description {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  color: #777777;
+  padding-right: 45px;
+}
+.facilities .swiper-facilities__pagination {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+}
+.facilities .swiper-pagination-bullet-active {
+  background-color: #bead8e;
+}
+
 .footer__content {
   padding: 0 20px;
   background-image: url("../../../assets/images/footer-background.svg");
