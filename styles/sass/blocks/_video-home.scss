@@ -1,0 +1,94 @@
+@use "../colors";
+@use "../fonts";
+@import "../buttons.scss";
+
+.video-home {
+    margin-top: 5rem;
+    &__container {
+        padding: 55px 20px;
+        background-color: colors.$black;
+    }
+
+    &__text {
+        color: colors.$white;
+        font-family: fonts.$archivo;
+        font-size: 14px;
+
+        &__title {
+            font-family: fonts.$old;
+            font-size: 56px;
+            margin-bottom: 16px;
+            &--small {
+                font-weight: 700;
+                letter-spacing: 3px;
+                margin-bottom: 32px;
+            }
+        }
+        &__description {
+            color: colors.$grey-text;
+            margin-bottom: 32px;
+        }
+    }
+    &__button {
+        &--gold {
+            @include button(216px, colors.$gold-light);
+            border: none;
+        }
+
+        &--desktop {
+            display: none;
+        }
+    }
+
+    &__source {
+        margin-bottom: 36px;
+        &--desktop {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .video-home {
+        position: relative;
+        margin-top: 7.5rem;
+        z-index: 1;
+        &__container {
+            display: flex;
+            padding: 130px 20px;
+        }
+        &__text {
+            padding: 0 10px 0 15%;
+            width: 50%;
+            position: relative;
+            &__title {
+                font-size: 80px;
+                margin-bottom: 32px;
+                &--small {
+                    margin-bottom: 36px;
+                }
+            }
+            &__description {
+                line-height: 24px;
+            }
+        }
+        &__button,
+        &__source {
+            z-index: 1;
+            &--desktop {
+                display: block;
+            }
+            &--mobile {
+                display: none;
+            }
+        }
+        &__gold-rectangle {
+            position: absolute;
+            height: 100%;
+            width: 575px;
+            background-color: colors.$gold-dark;
+            top: 0;
+            right: 0;
+        }
+    }
+}
