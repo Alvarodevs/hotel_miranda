@@ -1,0 +1,30 @@
+@use "../colors";
+@use "../fonts";
+
+.menu {
+    padding: 0 20px;
+
+    &__img {
+        width: 115px;
+        height: 115px;
+        margin-right: -3rem;
+
+        &__container {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+    &__title {
+        font-size: 56px;
+        font-family: fonts.$old;
+        &--small {
+            font-size: 14px;
+            font-family: fonts.$archivo;
+            letter-spacing: 3px;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+    }
+}

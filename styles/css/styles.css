@@ -764,6 +764,31 @@
     gap: 30px 3rem;
   }
 }
+.menu {
+  padding: 0 20px;
+}
+.menu__img {
+  width: 115px;
+  height: 115px;
+  margin-right: -3rem;
+}
+.menu__img__container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.menu__title {
+  font-size: 56px;
+  font-family: "Old Standard TT", serif;
+}
+.menu__title--small {
+  font-size: 14px;
+  font-family: "Archivo", sans-serif;
+  letter-spacing: 3px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
 .footer__content {
   padding: 0 20px;
   background-image: url("../../../assets/images/footer-background.svg");
