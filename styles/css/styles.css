@@ -906,7 +906,7 @@
 .menu .swiper-menu-images .swiper-wrapper .swiper-slide .image__container {
   width: 335px;
   height: 335px;
-  margin: 0 1.4rem;
+  margin: 0 0.5rem;
 }
 .menu .swiper-menu-images .swiper-wrapper .swiper-slide .image__container .image__menu {
   width: 100%;
