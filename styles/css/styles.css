@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&family=Old+Standard+TT&family=Roboto:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&family=Old+Standard+TT&family=Roboto:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&family=Old+Standard+TT&family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&family=Old+Standard+TT&family=Roboto:wght@400&display=swap");
 .header__container {
   width: 100%;
   height: 70px;
@@ -787,34 +788,83 @@
   font-weight: 700;
   margin-bottom: 24px;
 }
-.menu .swiper-menu .swiper-wrapper .swiper-foods__column .food {
-  display: flex;
+.menu .swiper-menu {
+  position: relative;
 }
-.menu .swiper-menu .swiper-wrapper .swiper-foods__column .food__img {
+.menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column .food {
+  display: flex;
+  margin-bottom: 16px;
+  height: min-content;
+}
+.menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column .food__img {
   width: 120px;
   height: 120px;
+  margin: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.menu .swiper-menu .swiper-wrapper .swiper-foods__column .food__text {
+.menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column .food__text {
   padding-left: 30px;
   padding-top: 5px;
   max-width: 215px;
 }
-.menu .swiper-menu .swiper-wrapper .swiper-foods__column .food__text__title {
+.menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column .food__text__title {
   font-size: 24px;
   font-family: "Old Standard TT", serif;
   margin-bottom: 12px;
 }
-.menu .swiper-menu .swiper-wrapper .swiper-foods__column .food__text__description {
+.menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column .food__text__description {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   line-height: 24px;
 }
-.menu .swiper-menu .swiper-wrapper .swiper-foods__column .food__arrow {
+.menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column .food__arrow {
   display: none;
 }
-.menu .swiper-menu .swiper-wrapper .swiper-foods__column .food:hover {
+.menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column .food:hover {
   background-color: #222222;
   color: #ffffff;
+}
+.menu .swiper-menu-buttons {
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  margin: 0 20px;
+  display: flex;
+  gap: 16px;
+}
+.menu .swiper-menu-buttons-prev {
+  background-color: #F8F8F8;
+  width: 36px;
+  height: 36px;
+  padding: 10px 15px;
+}
+.menu .swiper-menu-buttons-prev img {
+  width: 5px;
+  height: 10px;
+}
+.menu .swiper-menu-buttons-prev:hover {
+  background-color: #bead8e;
+}
+.menu .swiper-menu-buttons-prev:hover img {
+  filter: brightness(0) invert(1);
+}
+.menu .swiper-menu-buttons-next {
+  background-color: #F8F8F8;
+  width: 36px;
+  height: 36px;
+  padding: 10px 15px;
+}
+.menu .swiper-menu-buttons-next img {
+  width: 5px;
+  height: 10px;
+}
+.menu .swiper-menu-buttons-next:hover {
+  background-color: #bead8e;
+}
+.menu .swiper-menu-buttons-next:hover img {
+  filter: brightness(0) invert(1);
 }
 
 @media only screen and (min-width: 1000px) {
@@ -831,17 +881,43 @@
     max-width: 100%;
     margin-bottom: 45px;
   }
-  .menu .swiper-menu .swiper-wrapper .swiper-foods__column .food__text {
+  .menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column .food {
+    margin-bottom: 20px;
+    width: 570px;
+  }
+  .menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column .food__text {
     max-width: 480px;
     padding-top: 15px;
   }
-  .menu .swiper-menu .swiper-wrapper .swiper-foods__column .food__text__description {
+  .menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column .food__text__description {
     width: 285px;
   }
-  .menu .swiper-menu .swiper-wrapper .swiper-foods__column .food:hover .food__arrow {
+  .menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column .food:hover .food__arrow {
     display: inline-block;
     margin-left: 60px;
     margin-right: 40px;
+  }
+  .menu .swiper-menu-buttons {
+    top: -10rem;
+    right: -10rem;
+  }
+  .menu .swiper-menu-buttons-prev {
+    width: 70px;
+    height: 70px;
+    padding: 25px 30px;
+  }
+  .menu .swiper-menu-buttons-prev img {
+    width: 10px;
+    height: 20px;
+  }
+  .menu .swiper-menu-buttons-next {
+    width: 70px;
+    height: 70px;
+    padding: 25px 30px;
+  }
+  .menu .swiper-menu-buttons-next img {
+    width: 10px;
+    height: 20px;
   }
 }
 .footer__content {

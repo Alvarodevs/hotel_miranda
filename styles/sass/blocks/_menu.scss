@@ -1,5 +1,6 @@
 @use "../colors";
 @use "../fonts";
+@import "../buttons.scss";
 
 .menu {
     padding: 115px 20px 60px 20px;
@@ -26,39 +27,89 @@
         }
     }
     .swiper-menu {
+        position: relative;
         .swiper-wrapper {
-            .swiper-foods__column {
-                .food {
-                    display: flex;
-                    &__img {
-                        width: 120px;
-                        height: 120px;
-                    }
-
-                    &__text {
-                        padding-left: 30px;
-                        padding-top: 5px;
-                        max-width: 215px;
-                        &__title {
-                            font-size: 24px;
-                            font-family: fonts.$old;
-                            margin-bottom: 12px;
+            .swiper-slide {
+                .swiper-foods__column {
+                    .food {
+                        display: flex;
+                        margin-bottom: 16px;
+                        height: min-content;
+                        &__img {
+                            width: 120px;
+                            height: 120px;
+                            margin: auto;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
                         }
 
-                        &__description {
-                            font-size: 14px;
-                            font-family: fonts.$roboto;
-                            line-height: 24px;
+                        &__text {
+                            padding-left: 30px;
+                            padding-top: 5px;
+                            max-width: 215px;
+
+                            &__title {
+                                font-size: 24px;
+                                font-family: fonts.$old;
+                                margin-bottom: 12px;
+                            }
+
+                            &__description {
+                                font-size: 14px;
+                                font-family: fonts.$roboto;
+                                line-height: 24px;
+                            }
+                        }
+
+                        &__arrow {
+                            display: none;
+                        }
+
+                        &:hover {
+                            background-color: colors.$black;
+                            color: colors.$white;
                         }
                     }
-
-                    &__arrow {
-                        display: none;
+                }
+            }
+        }
+        &-buttons {
+            position: absolute;
+            bottom: -30px;
+            right: 0;
+            margin: 0 20px;
+            display: flex;
+            gap: 16px;
+            &-prev {
+                background-color: colors.$grey-light;
+                width: 36px;
+                height: 36px;
+                padding: 10px 15px;
+                img {
+                    width: 5px;
+                    height: 10px;
+                }
+                &:hover {
+                    background-color: colors.$gold-light;
+                    img {
+                        filter: brightness(0) invert(1);
                     }
-
-                    &:hover {
-                        background-color: colors.$black;
-                        color: colors.$white;
+                }
+            }
+            &-next {
+                background-color: colors.$grey-light;
+                width: 36px;
+                height: 36px;
+                padding: 10px 15px;
+                img {
+                    width: 5px;
+                    height: 10px;
+                }
+                &:hover {
+                    background-color: colors.$gold-light;
+                    img {
+                        filter: brightness(0) invert(1);
                     }
                 }
             }
@@ -82,23 +133,50 @@
         }
         .swiper-menu {
             .swiper-wrapper {
-                .swiper-foods__column {
-                    .food {
-                        &__text {
-                            max-width: 480px;
-                            padding-top: 15px;
+                .swiper-slide {
+                    .swiper-foods__column {
+                        .food {
+                            margin-bottom: 20px;
+                            width: 570px;
+                            &__text {
+                                max-width: 480px;
+                                padding-top: 15px;
 
-                            &__description {
-                                width: 285px;
+                                &__description {
+                                    width: 285px;
+                                }
+                            }
+
+                            &:hover .food__arrow {
+                                display: inline-block;
+                                margin-left: 60px;
+                                margin-right: 40px;
                             }
                         }
-                        
-                        &:hover .food__arrow {
-                            display: inline-block;
-                            margin-left: 60px;
-                            margin-right: 40px;
-                        }
                     }
+                }
+            }
+            &-buttons{
+                top: -10rem;
+                right: -10rem;
+
+                &-prev{
+                    width: 70px;
+                    height: 70px;
+                    padding: 25px 30px;
+                    img {
+                    width: 10px;
+                    height: 20px;
+                }
+                }
+                &-next{
+                    width: 70px;
+                    height: 70px;
+                    padding: 25px 30px;
+                    img {
+                    width: 10px;
+                    height: 20px;
+                }
                 }
             }
         }
