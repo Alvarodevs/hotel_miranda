@@ -4,7 +4,7 @@
 .stats{
     padding: 48px 80px;
     background-color: colors.$black;
-    
+    margin-bottom: 120px;
     &__card{
         width: 210px;
         text-align: center;
@@ -28,6 +28,26 @@
         &__text{
             font-size: 14px;
             color: colors.$grey-text-dark;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .stats{
+        display: flex;
+        padding: 80px;
+        justify-content: space-between;
+        margin: 0 15% 120px 15%;
+        align-content: center;
+        height: 348px;
+        width: 1170px;
+        &__card{
+            margin-top: auto;
+            text-align: start;
+
+            &--backers{
+                margin-right: 110px;
+            }
         }
     }
 }
