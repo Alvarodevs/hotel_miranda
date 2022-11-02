@@ -799,10 +799,12 @@
 .menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column .food__img {
   width: 120px;
   height: 120px;
-  margin: auto;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column .food__img--marmelade {
+  margin: auto 0;
 }
 .menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column .food__text {
   padding-left: 30px;
@@ -834,36 +836,20 @@
   display: flex;
   gap: 16px;
 }
-.menu .swiper-menu-buttons-prev {
+.menu .swiper-menu__button {
   background-color: #F8F8F8;
   width: 36px;
   height: 36px;
   padding: 10px 15px;
 }
-.menu .swiper-menu-buttons-prev img {
+.menu .swiper-menu__button img {
   width: 5px;
   height: 10px;
 }
-.menu .swiper-menu-buttons-prev:hover {
+.menu .swiper-menu__button:hover {
   background-color: #bead8e;
 }
-.menu .swiper-menu-buttons-prev:hover img {
-  filter: brightness(0) invert(1);
-}
-.menu .swiper-menu-buttons-next {
-  background-color: #F8F8F8;
-  width: 36px;
-  height: 36px;
-  padding: 10px 15px;
-}
-.menu .swiper-menu-buttons-next img {
-  width: 5px;
-  height: 10px;
-}
-.menu .swiper-menu-buttons-next:hover {
-  background-color: #bead8e;
-}
-.menu .swiper-menu-buttons-next:hover img {
+.menu .swiper-menu__button:hover img {
   filter: brightness(0) invert(1);
 }
 
@@ -885,6 +871,9 @@
     margin-bottom: 20px;
     width: 570px;
   }
+  .menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column .food__img--marmelade {
+    margin: 0;
+  }
   .menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column .food__text {
     max-width: 480px;
     padding-top: 15px;
@@ -901,21 +890,12 @@
     top: -10rem;
     right: -10rem;
   }
-  .menu .swiper-menu-buttons-prev {
+  .menu .swiper-menu__button {
     width: 70px;
     height: 70px;
     padding: 25px 30px;
   }
-  .menu .swiper-menu-buttons-prev img {
-    width: 10px;
-    height: 20px;
-  }
-  .menu .swiper-menu-buttons-next {
-    width: 70px;
-    height: 70px;
-    padding: 25px 30px;
-  }
-  .menu .swiper-menu-buttons-next img {
+  .menu .swiper-menu__button img {
     width: 10px;
     height: 20px;
   }

@@ -1,20 +1,24 @@
 const swiper = new Swiper(".swiper-menu", {
     direction: "horizontal",
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 30,
-    // autoplay: {
-    //     delay: 4000,
-    // },
-    breakpointsBase: 'window',
+    loop: false,
+    spaceBetween: 0,
+    autoplay: {
+        delay: 4000,
+    },
+    width: 570,
+    breakpointsBase: 'container',
     breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+        },
         1000: {
-            spaceBetween: 300,
             slidesPerView: 2,
+            spaceBetween: 0,
         }
     },
     navigation: {
-        nextEl: '.swiper-menu-buttons-next',
-        prevEl: '.swiper-menu-buttons-prev',
+        nextEl: '.swiper-menu__button--next',
+        prevEl: '.swiper-menu__button--prev',
     },
 });

@@ -35,13 +35,17 @@
                         display: flex;
                         margin-bottom: 16px;
                         height: min-content;
+                        
                         &__img {
                             width: 120px;
                             height: 120px;
-                            margin: auto;
                             background-position: center;
                             background-repeat: no-repeat;
                             background-size: cover;
+
+                            &--marmelade{
+                                margin:auto 0;
+                            }
                         }
 
                         &__text {
@@ -81,36 +85,21 @@
             margin: 0 20px;
             display: flex;
             gap: 16px;
-            &-prev {
-                background-color: colors.$grey-light;
-                width: 36px;
-                height: 36px;
-                padding: 10px 15px;
-                img {
-                    width: 5px;
-                    height: 10px;
-                }
-                &:hover {
-                    background-color: colors.$gold-light;
-                    img {
-                        filter: brightness(0) invert(1);
-                    }
-                }
+        }
+
+        &__button {
+            background-color: colors.$grey-light;
+            width: 36px;
+            height: 36px;
+            padding: 10px 15px;
+            img {
+                width: 5px;
+                height: 10px;
             }
-            &-next {
-                background-color: colors.$grey-light;
-                width: 36px;
-                height: 36px;
-                padding: 10px 15px;
+            &:hover {
+                background-color: colors.$gold-light;
                 img {
-                    width: 5px;
-                    height: 10px;
-                }
-                &:hover {
-                    background-color: colors.$gold-light;
-                    img {
-                        filter: brightness(0) invert(1);
-                    }
+                    filter: brightness(0) invert(1);
                 }
             }
         }
@@ -138,6 +127,13 @@
                         .food {
                             margin-bottom: 20px;
                             width: 570px;
+
+                            &__img{
+                                &--marmelade {
+                                    margin: 0;
+                                }
+                            }
+
                             &__text {
                                 max-width: 480px;
                                 padding-top: 15px;
@@ -156,27 +152,18 @@
                     }
                 }
             }
-            &-buttons{
+            &-buttons {
                 top: -10rem;
                 right: -10rem;
+            }
 
-                &-prev{
-                    width: 70px;
-                    height: 70px;
-                    padding: 25px 30px;
-                    img {
+            &__button {
+                width: 70px;
+                height: 70px;
+                padding: 25px 30px;
+                img {
                     width: 10px;
                     height: 20px;
-                }
-                }
-                &-next{
-                    width: 70px;
-                    height: 70px;
-                    padding: 25px 30px;
-                    img {
-                    width: 10px;
-                    height: 20px;
-                }
                 }
             }
         }
