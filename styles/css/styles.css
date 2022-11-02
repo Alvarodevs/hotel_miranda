@@ -749,6 +749,9 @@
 }
 
 @media only screen and (min-width: 1000px) {
+  .facilities__title {
+    margin-bottom: 60px;
+  }
   .facilities .swiper-facilities {
     display: none;
   }
