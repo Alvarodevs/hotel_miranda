@@ -765,21 +765,20 @@
   }
 }
 .menu {
-  padding: 0 20px;
+  padding: 115px 20px 60px 20px;
+  position: relative;
 }
 .menu__img {
+  position: absolute;
   width: 115px;
   height: 115px;
-  margin-right: -3rem;
-}
-.menu__img__container {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
+  top: 0;
+  right: -25px;
 }
 .menu__title {
   font-size: 56px;
   font-family: "Old Standard TT", serif;
+  max-width: 350px;
 }
 .menu__title--small {
   font-size: 14px;
@@ -788,7 +787,63 @@
   font-weight: 700;
   margin-bottom: 24px;
 }
+.menu .swiper-menu .swiper-wrapper .swiper-foods__column .food {
+  display: flex;
+}
+.menu .swiper-menu .swiper-wrapper .swiper-foods__column .food__img {
+  width: 120px;
+  height: 120px;
+}
+.menu .swiper-menu .swiper-wrapper .swiper-foods__column .food__text {
+  padding-left: 30px;
+  padding-top: 5px;
+  max-width: 215px;
+}
+.menu .swiper-menu .swiper-wrapper .swiper-foods__column .food__text__title {
+  font-size: 24px;
+  font-family: "Old Standard TT", serif;
+  margin-bottom: 12px;
+}
+.menu .swiper-menu .swiper-wrapper .swiper-foods__column .food__text__description {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  line-height: 24px;
+}
+.menu .swiper-menu .swiper-wrapper .swiper-foods__column .food__arrow {
+  display: none;
+}
+.menu .swiper-menu .swiper-wrapper .swiper-foods__column .food:hover {
+  background-color: #222222;
+  color: #ffffff;
+}
 
+@media only screen and (min-width: 1000px) {
+  .menu {
+    padding: 200px 375px 120px 375px;
+  }
+  .menu__img {
+    width: 230px;
+    height: 230px;
+    left: 80px;
+  }
+  .menu__title {
+    font-size: 80px;
+    max-width: 100%;
+    margin-bottom: 45px;
+  }
+  .menu .swiper-menu .swiper-wrapper .swiper-foods__column .food__text {
+    max-width: 480px;
+    padding-top: 15px;
+  }
+  .menu .swiper-menu .swiper-wrapper .swiper-foods__column .food__text__description {
+    width: 285px;
+  }
+  .menu .swiper-menu .swiper-wrapper .swiper-foods__column .food:hover .food__arrow {
+    display: inline-block;
+    margin-left: 60px;
+    margin-right: 40px;
+  }
+}
 .footer__content {
   padding: 0 20px;
   background-image: url("../../../assets/images/footer-background.svg");

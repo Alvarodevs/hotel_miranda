@@ -2,29 +2,105 @@
 @use "../fonts";
 
 .menu {
-    padding: 0 20px;
-
+    padding: 115px 20px 60px 20px;
+    position: relative;
     &__img {
+        position: absolute;
         width: 115px;
         height: 115px;
-        margin-right: -3rem;
-
-        &__container {
-            width: 100%;
-            display: flex;
-            justify-content: flex-end;
-        }
+        top: 0;
+        right: -25px;
     }
 
     &__title {
         font-size: 56px;
         font-family: fonts.$old;
+        max-width: 350px;
         &--small {
             font-size: 14px;
             font-family: fonts.$archivo;
             letter-spacing: 3px;
             font-weight: 700;
+
             margin-bottom: 24px;
+        }
+    }
+    .swiper-menu {
+        .swiper-wrapper {
+            .swiper-foods__column {
+                .food {
+                    display: flex;
+                    &__img {
+                        width: 120px;
+                        height: 120px;
+                    }
+
+                    &__text {
+                        padding-left: 30px;
+                        padding-top: 5px;
+                        max-width: 215px;
+                        &__title {
+                            font-size: 24px;
+                            font-family: fonts.$old;
+                            margin-bottom: 12px;
+                        }
+
+                        &__description {
+                            font-size: 14px;
+                            font-family: fonts.$roboto;
+                            line-height: 24px;
+                        }
+                    }
+
+                    &__arrow {
+                        display: none;
+                    }
+
+                    &:hover {
+                        background-color: colors.$black;
+                        color: colors.$white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .menu {
+        padding: 200px 375px 120px 375px;
+
+        &__img {
+            width: 230px;
+            height: 230px;
+            left: 80px;
+        }
+        &__title {
+            font-size: 80px;
+            max-width: 100%;
+            margin-bottom: 45px;
+        }
+        .swiper-menu {
+            .swiper-wrapper {
+                .swiper-foods__column {
+                    .food {
+                        &__text {
+                            max-width: 480px;
+                            padding-top: 15px;
+
+                            &__description {
+                                width: 285px;
+                            }
+                        }
+                        
+                        &:hover .food__arrow {
+                            display: inline-block;
+                            margin-left: 60px;
+                            margin-right: 40px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
