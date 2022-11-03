@@ -18,28 +18,49 @@
     }
 
     .swiper {
-        margin: 45px 0;
-        overflow: visible;
+        padding: 45px 0;
         position: relative;
+        &__buttons {
+            display: flex;
+            position: absolute;
+            top: 9rem;
+            padding: 0 5%;
+            z-index: 1;
+            width: 100%;
+            justify-content: space-between;
+        }
         &-button {
             width: 32px;
             height: 32px;
             padding: 12px;
             background-color: colors.$white;
-            color: colors.$black;
 
-            &-next {
-                content: url("/assets/icons/chevron-right.svg");
+            &--next {
+                width: 100%;
+                height: 100%;
+                background-image: url("/assets/icons/chevron-right.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
             }
 
-            &-prev {
-                content: url("/assets/icons/chevron-left.svg");
+            &--prev {
+                width: 100%;
+                height: 100%;
+                background-image: url("/assets/icons/chevron-left.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
             }
 
             &:hover {
                 background-color: colors.$gold-light;
-                // color: colors.$white !important;
-                // fill: colors.$white !important;
+                .swiper-button {
+                    &--next,
+                    &--prev {
+                        filter: brightness(0) invert(1);
+                    }
+                }
             }
         }
     }
@@ -48,13 +69,47 @@
 @media only screen and (min-width: 395px) {
     .rooms {
         .swiper {
-            &-slide{
-                margin: 0 10rem;
+            &__buttons {
+                width: 80%;
+                left: 10%;
+                right: 10%;
             }
             &-button {
-                margin: -1rem 10% 0 10%;
                 width: 40px;
                 height: 40px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 450px) {
+    .rooms {
+        .swiper {
+            &__buttons {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 610px) {
+    .rooms {
+        .swiper {
+            &__buttons {
+                left: 20%;
+                right: 20%;
+                width: 60%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 855px) {
+    .rooms {
+        .swiper {
+            &__buttons {
+                left: 25%;
+                right: 25%;
+                width: 50%;
             }
         }
     }
@@ -65,18 +120,17 @@
         padding: 0;
 
         .swiper {
+            &__buttons {
+                width: 100%;
+                left: auto;
+                right: auto;
+                top: 15rem;
+                padding: 0 20%;
+            }
             &-button {
                 width: 80px;
                 height: 80px;
                 padding: 30px;
-                position: absolute;
-                top: 15rem;
-                &-next {
-                    margin-right: 10%;
-                }
-                &-prev {
-                    margin-left: 10%;
-                }
             }
         }
     }
