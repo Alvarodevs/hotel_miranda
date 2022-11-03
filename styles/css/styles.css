@@ -905,6 +905,7 @@
 }
 .menu .swiper-menu-images {
   margin-top: 5rem;
+  overflow: hidden;
 }
 .menu .swiper-menu-images .swiper-wrapper .swiper-slide .image__container {
   width: 335px;
