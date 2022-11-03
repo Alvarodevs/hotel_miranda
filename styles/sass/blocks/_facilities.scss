@@ -4,10 +4,19 @@
 .facilities {
     padding: 60px 24px;
 
+    &--dark {
+        background-color: colors.$black;
+
+        p {
+            color: colors.$white;
+        }
+    }
+
     &__title {
         font-family: fonts.$old;
         font-size: 56px;
         text-align: center;
+        padding-bottom: 32px;
 
         &--small {
             font-family: fonts.$archivo;
@@ -28,12 +37,17 @@
             &-background {
                 position: absolute;
                 top: 0;
-                right: 0;
+                right: 12px;
                 font-family: fonts.$archivo;
                 font-size: 120px;
                 color: colors.$grey-dark;
                 opacity: 4%;
                 font-weight: 700;
+
+                &--dark{
+                    color: colors.$black;
+                    opacity: 1;
+                }
             }
         }
         &__title {
@@ -41,7 +55,7 @@
             font-size: 30px;
             margin-bottom: 30px;
 
-            &--payment{
+            &--payment {
                 margin-top: 10px;
             }
         }
@@ -50,6 +64,11 @@
             font-size: 14px;
             color: colors.$grey-text;
             padding-right: 45px;
+            padding-bottom: 50px;
+        }
+
+        &--dark {
+            background-color: #292929;
         }
     }
     .swiper-facilities {
@@ -69,7 +88,7 @@
 
 @media only screen and (min-width: 1000px) {
     .facilities {
-        &__title{
+        &__title {
             margin-bottom: 60px;
         }
         .swiper-facilities {

@@ -769,10 +769,17 @@
 .facilities {
   padding: 60px 24px;
 }
+.facilities--dark {
+  background-color: #222222;
+}
+.facilities--dark p {
+  color: #ffffff;
+}
 .facilities__title {
   font-family: "Old Standard TT", serif;
   font-size: 56px;
   text-align: center;
+  padding-bottom: 32px;
 }
 .facilities__title--small {
   font-family: "Archivo", sans-serif;
@@ -794,12 +801,16 @@
 .facilities .card__img-background {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 12px;
   font-family: "Archivo", sans-serif;
   font-size: 120px;
   color: #333333;
   opacity: 4%;
   font-weight: 700;
+}
+.facilities .card__img-background--dark {
+  color: #222222;
+  opacity: 1;
 }
 .facilities .card__title {
   font-family: "Old Standard TT", serif;
@@ -814,6 +825,10 @@
   font-size: 14px;
   color: #777777;
   padding-right: 45px;
+  padding-bottom: 50px;
+}
+.facilities .card--dark {
+  background-color: #292929;
 }
 .facilities .swiper-facilities__pagination {
   margin-top: 32px;
