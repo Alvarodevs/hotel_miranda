@@ -11,15 +11,15 @@ const swiper = new Swiper(".swiper", {
     effect: 'slide',
     slideNextClass: 'swiper-slide-next',
     slidePrevClass: 'swiper-slide-prev',
-    breakpointsBase: 'window',
+    breakpointsBase: 'container',
     breakpoints: {
         1000: {
             slidesPerView: 3,
-            spaceBeween: 50,
+            spaceBeween: 300,
         }
     },
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button--next',
+        prevEl: '.swiper-button--prev',
     },
 });   

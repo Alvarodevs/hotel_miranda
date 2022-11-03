@@ -448,57 +448,105 @@
   letter-spacing: 3px;
 }
 .rooms .swiper {
-  margin: 45px 0;
-  overflow: visible;
+  padding: 45px 0;
   position: relative;
+}
+.rooms .swiper__buttons {
+  display: flex;
+  position: absolute;
+  top: 9rem;
+  padding: 0 5%;
+  z-index: 1;
+  width: 100%;
+  justify-content: space-between;
 }
 .rooms .swiper-button {
   width: 32px;
   height: 32px;
   padding: 12px;
   background-color: #ffffff;
-  color: #222222;
 }
-.rooms .swiper-button-next {
-  content: url("/assets/icons/chevron-right.svg");
+.rooms .swiper-button--next {
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/icons/chevron-right.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-.rooms .swiper-button-prev {
-  content: url("/assets/icons/chevron-left.svg");
+.rooms .swiper-button--prev {
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/icons/chevron-left.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .rooms .swiper-button:hover {
   background-color: #bead8e;
 }
+.rooms .swiper-button:hover .swiper-button--next, .rooms .swiper-button:hover .swiper-button--prev {
+  filter: brightness(0) invert(1);
+}
 
 @media only screen and (min-width: 395px) {
-  .rooms .swiper-slide {
-    margin: 0 10rem;
+  .rooms .swiper__buttons {
+    width: 80%;
+    left: 10%;
+    right: 10%;
   }
   .rooms .swiper-button {
-    margin: -1rem 10% 0 10%;
     width: 40px;
     height: 40px;
+  }
+}
+@media only screen and (min-width: 450px) {
+  .rooms .swiper__buttons {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 610px) {
+  .rooms .swiper__buttons {
+    left: 20%;
+    right: 20%;
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 855px) {
+  .rooms .swiper__buttons {
+    left: 25%;
+    right: 25%;
+    width: 50%;
   }
 }
 @media only screen and (min-width: 1000px) {
   .rooms {
     padding: 0;
   }
+  .rooms .swiper-slide {
+    width: 900px !important;
+    margin-left: -5rem;
+  }
+  .rooms .swiper__buttons {
+    width: 100%;
+    left: auto;
+    right: auto;
+    top: 15rem;
+    padding: 0 20%;
+  }
   .rooms .swiper-button {
     width: 80px;
     height: 80px;
     padding: 30px;
-    position: absolute;
-    top: 15rem;
   }
-  .rooms .swiper-button-next {
-    margin-right: 10%;
-  }
-  .rooms .swiper-button-prev {
-    margin-left: 10%;
-  }
+}
+.room {
+  margin: auto;
+  display: block;
 }
 .room__main-container {
   position: relative;
+  z-index: -1;
 }
 .room__img {
   background-image: url("/assets/images/lux-hotel.jpg");
@@ -531,11 +579,8 @@
   padding: 20px 20px;
   background-color: #ffffff;
   width: 335px;
-  margin: 14rem auto auto auto;
+  margin: -2rem auto auto auto;
   text-align: center;
-  position: absolute;
-  left: 0;
-  right: 0;
 }
 .room__info__text__title {
   font-family: "Old Standard TT", serif;
@@ -568,7 +613,6 @@
   .room__bar {
     width: 310px;
     height: 50px;
-    margin-left: 14rem;
   }
   .room__bar__icon {
     width: 20px;
@@ -580,7 +624,8 @@
     height: 172px;
     text-align: start;
     padding: 38px 38px;
-    margin: 28rem auto auto 2.5rem;
+    margin: -3rem auto auto auto;
+    z-index: 2;
   }
   .room__info__text {
     text-align: start;
