@@ -1,0 +1,51 @@
+@use "../colors";
+@use "../fonts";
+@import '../buttons.scss';
+
+.restaurant {
+    padding: 0 20px;
+
+    &__card {
+        padding: 20px;
+        box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
+        width: 335px;
+        margin: auto;
+    }
+    &__img {
+        margin: auto auto 32px auto;
+        width: 295px;
+        height: 232px;
+        background-image: url("/assets/images/lux-hotel.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    &__title {
+        font-size: 35px;
+        font-family: fonts.$old;
+        margin-bottom: 26px;
+
+        &--small {
+            font-size: 14px;
+            font-family: fonts.$archivo;
+            font-weight: 700;
+            margin-bottom: 26px;
+            color: colors.$grey-text;
+            letter-spacing: 3px;
+        }
+    }
+
+    &__description {
+        font-size: 14px;
+        font-family: fonts.$archivo;
+        margin-bottom: 16px;
+        color: colors.$grey-text;
+        line-height: 24px;
+    }
+
+    .button--gold {
+            border: none;
+            @include button(216px, colors.$gold-light);
+        }
+}
