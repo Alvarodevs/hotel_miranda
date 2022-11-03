@@ -521,6 +521,10 @@
   .rooms {
     padding: 0;
   }
+  .rooms .swiper-slide {
+    width: 900px !important;
+    margin-left: -5rem;
+  }
   .rooms .swiper__buttons {
     width: 100%;
     left: auto;
@@ -607,7 +611,6 @@
   .room__bar {
     width: 310px;
     height: 50px;
-    margin-left: 14rem;
   }
   .room__bar__icon {
     width: 20px;
@@ -619,7 +622,7 @@
     height: 172px;
     text-align: start;
     padding: 38px 38px;
-    margin: 2rem auto auto 2.5rem;
+    margin: -3rem auto auto auto;
     z-index: 2;
   }
   .room__info__text {

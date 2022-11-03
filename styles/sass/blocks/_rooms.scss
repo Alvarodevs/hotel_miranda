@@ -120,6 +120,10 @@
         padding: 0;
 
         .swiper {
+            &-slide{
+                width: 900px!important;
+                margin-left: -5rem;
+            }
             &__buttons {
                 width: 100%;
                 left: auto;
