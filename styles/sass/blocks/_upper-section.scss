@@ -3,6 +3,7 @@
 @import "../buttons.scss";
 
 .upper-section {
+    position: relative;
     &__content {
         padding: 75px 20px;
         background-color: colors.$grey-dark;
@@ -37,6 +38,31 @@
         border: none;
         @include button(215px, colors.$gold-light);
     }
+
+    &__links{
+        font-family: fonts.$archivo;
+        font-weight: 700;
+        background-color: colors.$white;
+        width: max-content;
+        padding: 16px 24px;
+        position: absolute;
+        bottom: 0;
+        right: 10%;
+        &--about{
+            color: colors.$gold-light!important;
+        }
+        a{
+            text-decoration: none;
+        }
+        span{
+            padding: 0 5px;
+        }
+        :visited {
+            color: inherit;
+        }
+
+        
+    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -57,6 +83,10 @@
         &__button{
             display: inline;
             margin-right: 30px;
+        }
+
+        &__links{
+            right: 15%;
         }
     }
 }

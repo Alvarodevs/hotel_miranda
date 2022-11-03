@@ -1,0 +1,42 @@
+@use "../colors";
+@use "../fonts";
+
+.video-about {
+    padding: 60px 20px 50px 20px;
+
+    &__source {
+        margin-bottom: 36px;
+        &--mobile{
+            height: 200px;
+        }
+        &--desktop {
+            display: none;
+        }
+    }
+
+    &__description{
+        font-family: fonts.$old;
+        font-size: 32px;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .video-about {
+        padding: 120px 10% 75px 10%;
+
+        &__source {
+            margin-bottom: 68px;
+            &--mobile {
+                display: none;
+            }
+            &--desktop {
+                display: block;
+            }
+        }
+        &__description{
+        font-size: 72px;
+        padding: 0 50px;
+    }
+    }
+}
