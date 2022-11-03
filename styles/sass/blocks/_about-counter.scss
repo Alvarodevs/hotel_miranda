@@ -1,0 +1,95 @@
+@use "../colors";
+@use "../fonts";
+
+.counter {
+    padding: 60px 20px 50px 20px;
+
+    &__title {
+        font-family: fonts.$old;
+        font-size: 56px;
+        max-width: 350px;
+
+        &--small {
+            font-family: fonts.$archivo;
+            font-size: 14px;
+            font-weight: 700;
+            color: colors.$grey-text;
+            letter-spacing: 3px;
+            margin-bottom: 24px;
+        }
+    }
+    &__cards {
+        margin: auto;
+        padding-bottom: 24px;
+    }
+    &__card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px 0px 28px 0px;
+        max-width: 350px;
+        .main-container {
+            display: flex;
+            &__info {
+                margin: 0 0 0 14px;
+                .amount {
+                    font-family: fonts.$old;
+                    font-size: 60px;
+                }
+                .fact {
+                    font-family: fonts.$roboto;
+                    font-size: 14px;
+                    color: colors.$grey-text;
+                }
+            }
+        }
+    }
+    .swiper-counter {
+        .swiper-wrapper {
+            img {
+                width: 335px;
+                height: 230px;
+            }
+        }
+        &-pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: colors.$gold-light;
+        }
+    }
+    &__images {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .counter {
+        padding: 120px 10%;
+
+        &__title {
+            max-width: 100%;
+            padding-bottom: 20px;
+        }
+        &__cards {
+            display: flex;
+            justify-content: space-evenly;
+            padding-bottom: 60px;
+        }
+        .swiper-counter {
+            display: none;
+        }
+        
+        &__images {
+            display: flex;
+            margin: auto;
+            img {
+                width: 570px;
+                height: 400px;
+                margin: 0 30px;
+            }
+        }
+    }
+}
