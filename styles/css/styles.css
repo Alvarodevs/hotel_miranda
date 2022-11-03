@@ -1107,6 +1107,84 @@
     padding: 0 50px;
   }
 }
+.icons {
+  padding: 0 20px;
+  margin: auto;
+}
+.icons--display {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+.icons__service {
+  width: 158px;
+  height: 158px;
+  padding: 40px 10px;
+  margin: auto;
+}
+.icons__service__img {
+  color: #bead8e;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 58px;
+  height: 50px;
+  margin: auto auto 13px auto;
+}
+.icons__service__img--breakfast {
+  background-image: url("/assets/icons/about_us/breakfast.svg");
+}
+.icons__service__img--airport {
+  filter: invert(0.45) sepia(1);
+  background-image: url("/assets/icons/about_us/plane.svg");
+}
+.icons__service__img--city {
+  background-image: url("/assets/icons/about_us/location.svg");
+}
+.icons__service__img--bbq {
+  background-image: url("/assets/icons/about_us/bbq.svg");
+}
+.icons__service__img--room {
+  background-image: url("/assets/icons/about_us/luxury_room.svg");
+}
+.icons__service__title {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  text-align: center;
+}
+.icons__service:hover {
+  background-color: #bead8e;
+}
+.icons__service:hover .icons__service__img {
+  filter: brightness(0) invert(1);
+}
+.icons__service:hover .icons__service__title {
+  color: #ffffff;
+}
+.icons__service--bbq {
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  .icons--display {
+    display: flex;
+    justify-content: center;
+    padding: 0 10%;
+  }
+  .icons__service--bbq {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .icons--display {
+    padding: 5%;
+  }
+}
 .footer__content {
   padding: 0 20px;
   background-image: url("../../../assets/images/footer-background.svg");

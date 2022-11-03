@@ -1,0 +1,94 @@
+@use "../colors";
+@use "../fonts";
+
+.icons {
+    padding: 0 20px;
+    margin: auto;
+
+    &--display {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+    }
+
+    &__service {
+        width: 158px;
+        height: 158px;
+        padding: 40px 10px;
+        margin: auto;
+        &__img {
+            color: colors.$gold-light;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 58px;
+            height: 50px;
+            margin: auto auto 13px auto;
+            &--breakfast {
+                background-image: url("/assets/icons/about_us/breakfast.svg");
+            }
+            &--airport {
+                filter: invert(0.45) sepia(1);
+                background-image: url("/assets/icons/about_us/plane.svg");
+            }
+            &--city {
+                background-image: url("/assets/icons/about_us/location.svg");
+            }
+            &--bbq {
+                background-image: url("/assets/icons/about_us/bbq.svg");
+            }
+            &--room {
+                background-image: url("/assets/icons/about_us/luxury_room.svg");
+            }
+        }
+
+        &__title {
+            font-family: fonts.$archivo;
+            font-weight: 700;
+            font-size: 12px;
+            text-align: center;
+            letter-spacing: 2px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        &:hover {
+            background-color: colors.$gold-light;
+            .icons__service__img {
+                filter: brightness(0) invert(1);
+            }
+            .icons__service__title {
+                color: colors.$white;
+            }
+        }
+
+        &--bbq {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .icons {
+        &--display {
+            display: flex;
+            justify-content: center;
+            padding: 0 10%;
+        }
+
+        &__service {
+            &--bbq {
+                display: block;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .icons {
+        &--display {
+            padding: 5%;
+        }
+    }
+}
