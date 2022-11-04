@@ -1370,6 +1370,7 @@
 .rooms-list .swiper-pagination {
   position: absolute;
   bottom: 0;
+  z-index: -1;
 }
 .rooms-list .swiper-pagination-bullet {
   width: 40px;
