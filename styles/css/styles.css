@@ -1445,8 +1445,8 @@
   box-shadow: 0px 8px 16px rgba(138, 138, 138, 0.05);
 }
 .rooms-list .room__bar__icon {
-  width: 12px;
-  height: 12px;
+  width: 13px;
+  height: 13px;
   margin: auto;
   display: inline-block;
 }
@@ -1510,7 +1510,7 @@
   }
   .rooms-list .room__bar {
     margin: -20px auto auto auto;
-    width: 230px;
+    width: 80%;
   }
   .rooms-list .room__text {
     padding-top: 25px;
