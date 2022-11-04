@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&family=Old+Standard+TT&family=Roboto:wght@400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&family=Old+Standard+TT&family=Roboto:wght@400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&family=Old+Standard+TT&family=Roboto:wght@400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&family=Old+Standard+TT&family=Roboto:wght@400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&family=Old+Standard+TT&family=Roboto:wght@400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&family=Old+Standard+TT&family=Roboto:wght@400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&family=Old+Standard+TT&family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&family=Oswald:wght@700&family=Old+Standard+TT&family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&family=Oswald:wght@700&family=Old+Standard+TT&family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&family=Oswald:wght@700&family=Old+Standard+TT&family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&family=Oswald:wght@700&family=Old+Standard+TT&family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&family=Oswald:wght@700&family=Old+Standard+TT&family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&family=Oswald:wght@700&family=Old+Standard+TT&family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&family=Oswald:wght@700&family=Old+Standard+TT&family=Roboto:wght@400&display=swap");
 .header__container {
   width: 100%;
   height: 70px;
@@ -1362,6 +1362,33 @@
   width: 350px;
   margin: auto;
   display: block;
+  position: relative;
+}
+.rooms-list .swiper-room-list {
+  overflow: hidden;
+}
+.rooms-list .swiper-pagination {
+  position: absolute;
+  bottom: 0;
+}
+.rooms-list .swiper-pagination-bullet {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding: 8px;
+  font-family: "Oswald", serif;
+  border-radius: 0;
+  color: #000000;
+  background: #ffffff;
+  opacity: 1;
+}
+.rooms-list .swiper-pagination-bullet:hover {
+  background-color: #bead8e;
+  color: #ffffff;
+}
+.rooms-list .swiper-pagination-bullet-active {
+  background-color: #bead8e;
+  color: #ffffff;
 }
 .rooms-list .room {
   width: 335px;
@@ -1379,7 +1406,7 @@
   background-size: cover;
 }
 .rooms-list .room__content {
-  margin: -20px auto auto auto;
+  margin: -20px auto auto -35px;
 }
 .rooms-list .room__bar {
   background-color: #ffffff;
@@ -1448,7 +1475,7 @@
     height: 305px;
   }
   .rooms-list .room__content {
-    margin-bottom: 0;
+    margin: -20px auto 0 auto;
     padding: 50px 20px 35px 20px;
     position: relative;
     width: 80%;
