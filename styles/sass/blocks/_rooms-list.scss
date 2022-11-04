@@ -1,0 +1,140 @@
+@use "../colors";
+@use "../fonts";
+
+.rooms-list {
+    padding: 48px 24px;
+    width: 350px;
+    margin: auto;
+    .room {
+        width: 335px;
+        &__container {
+            width: 100%;
+        }
+
+        &__img {
+            width: 100%;
+            height: 220px;
+            background-image: url("/assets/images/room.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &__content {
+            margin: -20px auto auto auto;
+        }
+        &__bar {
+            background-color: colors.$white;
+            width: 256px;
+            height: 40px;
+            margin: auto auto 28px auto;
+            display: flex;
+            justify-content: space-evenly;
+            box-shadow: 0px 8px 16px rgba(138, 138, 138, 0.05);
+            &__icon {
+                width: 12px;
+                height: 12px;
+                margin: auto;
+                display: inline-block;
+            }
+        }
+        &__text {
+            text-align: center;
+
+            &__title {
+                font-family: fonts.$old;
+                font-size: 24px;
+            }
+
+            &__description {
+                font-family: fonts.$roboto;
+                font-size: 14px;
+                color: colors.$grey-text;
+                padding: 16px 20px;
+                line-height: 24px;
+            }
+        }
+
+        &__price {
+            display: flex;
+            justify-content: space-evenly;
+            &__text {
+                font-family: fonts.$archivo;
+                font-weight: 700;
+                font-size: 16px;
+            }
+            &__amount {
+                color: colors.$gold-light;
+            }
+            &__booking {
+                color: colors.$grey-text;
+                opacity: 50%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .rooms-list {
+        width: 100%;
+        padding: 48px 10% 48px 10%;
+        .room {
+            width: 100%;
+            margin: auto;
+            &__container {
+                display: flex;
+            }
+
+            &__img {
+                max-width: 470px;
+                height: 305px;
+            }
+
+            &__content {
+                margin-bottom: 0;
+                padding: 50px 20px 35px 20px;
+                position: relative;
+                width: 80%;
+            }
+
+            &__bar {
+                margin: auto auto 28px 0;
+            }
+            &__text {
+                text-align: start;
+
+                &__description {
+                    padding: 16px 0 16px 0;
+                }
+            }
+
+            &__price {
+                position: absolute;
+                right: -10%;
+                top: 25%;
+                bottom: 50%;
+                display: block;
+
+                &__amount {
+                    font-size: 40px;
+                    span {
+                        font-size: 16px;
+                    }
+                }
+                &__booking {
+                    color: colors.$grey-text;
+                    opacity: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1150px) {
+    .rooms-list {
+        .room {
+            &__price {
+                right: 0;
+            }
+        }
+    }
+}

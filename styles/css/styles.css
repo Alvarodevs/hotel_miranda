@@ -569,15 +569,15 @@
     padding: 30px;
   }
 }
-.room {
+.room-home {
   margin: auto;
   display: block;
 }
-.room__main-container {
+.room-home__main-container {
   position: relative;
   z-index: -1;
 }
-.room__img {
+.room-home__img {
   background-image: url("/assets/images/lux-hotel.jpg");
   width: 375px;
   height: 245px;
@@ -585,7 +585,7 @@
   background-position: center;
   margin: auto;
 }
-.room__bar {
+.room-home__bar {
   background-color: #ffffff;
   width: 256px;
   height: 40px;
@@ -598,39 +598,39 @@
   display: flex;
   justify-content: space-evenly;
 }
-.room__bar__icon {
+.room-home__bar__icon {
   width: 12px;
   height: 12px;
   margin: auto;
   display: inline-block;
 }
-.room__info {
+.room-home__info {
   padding: 20px 20px;
   background-color: #ffffff;
   width: 335px;
   margin: -2rem auto auto auto;
   text-align: center;
 }
-.room__info__text__title {
+.room-home__info__text__title {
   font-family: "Old Standard TT", serif;
   font-size: 28px;
   color: #222222;
 }
-.room__info__text__description {
+.room-home__info__text__description {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: #777777;
   margin: 12px 0;
 }
-.room__info__price {
+.room-home__info__price {
   font-family: "Archivo", sans-serif;
   color: #bead8e;
   text-align: center;
 }
-.room__info__price__amount {
+.room-home__info__price__amount {
   font-size: 32px;
 }
-.room__info__price__night {
+.room-home__info__price__night {
   font-size: 13px;
 }
 
@@ -1355,6 +1355,128 @@
     width: 570px;
     height: 400px;
     margin: 0 30px;
+  }
+}
+.rooms-list {
+  padding: 48px 24px;
+  width: 350px;
+  margin: auto;
+}
+.rooms-list .room {
+  width: 335px;
+}
+.rooms-list .room__container {
+  width: 100%;
+}
+.rooms-list .room__img {
+  width: 100%;
+  height: 220px;
+  background-image: url("/assets/images/room.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rooms-list .room__content {
+  margin: -20px auto auto auto;
+}
+.rooms-list .room__bar {
+  background-color: #ffffff;
+  width: 256px;
+  height: 40px;
+  margin: auto auto 28px auto;
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: 0px 8px 16px rgba(138, 138, 138, 0.05);
+}
+.rooms-list .room__bar__icon {
+  width: 12px;
+  height: 12px;
+  margin: auto;
+  display: inline-block;
+}
+.rooms-list .room__text {
+  text-align: center;
+}
+.rooms-list .room__text__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 24px;
+}
+.rooms-list .room__text__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #777777;
+  padding: 16px 20px;
+  line-height: 24px;
+}
+.rooms-list .room__price {
+  display: flex;
+  justify-content: space-evenly;
+}
+.rooms-list .room__price__text {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+.rooms-list .room__price__amount {
+  color: #bead8e;
+}
+.rooms-list .room__price__booking {
+  color: #777777;
+  opacity: 50%;
+}
+
+@media only screen and (min-width: 1000px) {
+  .rooms-list {
+    width: 100%;
+    padding: 48px 10% 48px 10%;
+  }
+  .rooms-list .room {
+    width: 100%;
+    margin: auto;
+  }
+  .rooms-list .room__container {
+    display: flex;
+  }
+  .rooms-list .room__img {
+    max-width: 470px;
+    height: 305px;
+  }
+  .rooms-list .room__content {
+    margin-bottom: 0;
+    padding: 50px 20px 35px 20px;
+    position: relative;
+    width: 80%;
+  }
+  .rooms-list .room__bar {
+    margin: auto auto 28px 0;
+  }
+  .rooms-list .room__text {
+    text-align: start;
+  }
+  .rooms-list .room__text__description {
+    padding: 16px 0 16px 0;
+  }
+  .rooms-list .room__price {
+    position: absolute;
+    right: -10%;
+    top: 25%;
+    bottom: 50%;
+    display: block;
+  }
+  .rooms-list .room__price__amount {
+    font-size: 40px;
+  }
+  .rooms-list .room__price__amount span {
+    font-size: 16px;
+  }
+  .rooms-list .room__price__booking {
+    color: #777777;
+    opacity: 50%;
+  }
+}
+@media only screen and (min-width: 1150px) {
+  .rooms-list .room__price {
+    right: 0;
   }
 }
 .footer__content {
