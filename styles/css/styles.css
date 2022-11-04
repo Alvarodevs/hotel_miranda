@@ -1492,58 +1492,31 @@
   .rooms-list .swiper-button-container {
     justify-content: space-evenly;
   }
+  .rooms-list .swiper-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px 20px;
+  }
   .rooms-list .room {
     width: 100%;
     margin: auto;
   }
-  .rooms-list .room__container {
-    display: flex;
-    max-width: 1200px;
-  }
   .rooms-list .room__img {
-    max-width: 470px;
-    height: 305px;
+    height: 200px;
   }
   .rooms-list .room__content {
-    margin: -20px auto 0 auto;
-    padding: 50px 20px 35px 20px;
-    position: relative;
-    width: 80%;
+    margin: -20px auto auto auto;
   }
   .rooms-list .room__bar {
-    margin: auto auto 28px 0;
+    margin: -20px auto auto auto;
+    width: 230px;
   }
   .rooms-list .room__text {
-    text-align: start;
+    padding-top: 25px;
   }
   .rooms-list .room__text__description {
     padding: 16px 0 16px 0;
-  }
-  .rooms-list .room__price {
-    position: absolute;
-    right: -10%;
-    top: 20%;
-    bottom: 50%;
-    display: block;
-    text-align: center;
-  }
-  .rooms-list .room__price__amount {
-    font-size: 40px;
-  }
-  .rooms-list .room__price__amount span {
-    font-size: 16px;
-  }
-  .rooms-list .room__price hr {
-    display: block;
-    margin: 10px auto;
-    border: 1px solid #8b8b8b;
-    opacity: 20%;
-    width: 50%;
-  }
-  .rooms-list .room__price__booking {
-    color: #777777;
-    opacity: 50%;
-    margin: auto;
   }
 }
 @media only screen and (min-width: 1150px) {

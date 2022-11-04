@@ -2,9 +2,9 @@ const swiper = new Swiper(".swiper-room-list", {
     direction: 'horizontal',
     loop: true,
     spaceBetween: 50,
-    autoplay: {
-        delay: 5000,
-    },
+    // autoplay: {
+    //     delay: 5000,
+    // },
     navigation: {
         nextEl: '.swiper-button-room-list-next',
         prevEl: '.swiper-button-room-list-prev',
