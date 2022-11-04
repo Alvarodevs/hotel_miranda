@@ -1401,20 +1401,25 @@
 }
 .footer__description__social-media {
   height: 50px;
+  display: flex;
+  justify-content: start;
 }
 .footer__description__social-media .social-media-link {
   text-decoration: none;
-  height: 34px;
   background-color: #F8F8F8;
-  padding: 10px;
+  padding: 8px;
   transition: 0.3s;
-  margin: 0 10px 0 0;
+  height: 40px;
+  width: 40px;
 }
 .footer__description__social-media .social-media-link__icon {
   margin: auto;
 }
 .footer__description__social-media .social-media-link:hover {
   background-color: #bead8e;
+}
+.footer__description__social-media .social-media-link:hover .social-media-link__icon {
+  filter: brightness(0) invert(1);
 }
 .footer__services__title {
   margin-top: 40px;
