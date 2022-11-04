@@ -5,8 +5,12 @@
     padding: 48px 24px;
     width: 350px;
     margin: auto;
+    display: block;
+
     .room {
         width: 335px;
+        padding-bottom: 28px;
+
         &__container {
             width: 100%;
         }
@@ -65,6 +69,9 @@
             &__amount {
                 color: colors.$gold-light;
             }
+            hr{
+                display: none;
+            }
             &__booking {
                 color: colors.$grey-text;
                 opacity: 50%;
@@ -82,6 +89,7 @@
             margin: auto;
             &__container {
                 display: flex;
+                max-width: 1200px;
             }
 
             &__img {
@@ -110,19 +118,28 @@
             &__price {
                 position: absolute;
                 right: -10%;
-                top: 25%;
+                top: 20%;
                 bottom: 50%;
                 display: block;
-
+                text-align: center;
                 &__amount {
                     font-size: 40px;
                     span {
                         font-size: 16px;
                     }
                 }
+                hr{ 
+                    display: block;
+                    margin: 10px auto;
+                    border: 1px solid colors.$grey-shadow;
+                    opacity: 20%;
+                    width: 50%;
+                    
+                }
                 &__booking {
                     color: colors.$grey-text;
                     opacity: 50%;
+                    margin:auto;
                 }
             }
         }
@@ -131,6 +148,7 @@
 
 @media only screen and (min-width: 1150px) {
     .rooms-list {
+        //padding: 48px 20% 48px 20%;
         .room {
             &__price {
                 right: 0;
