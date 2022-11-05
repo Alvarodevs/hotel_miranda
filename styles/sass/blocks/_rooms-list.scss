@@ -148,7 +148,7 @@
 @media only screen and (min-width: 1000px) {
     .rooms-list {
         width: 100%;
-        padding: 48px 5% 48px 10%;
+        padding: 48px 10% 48px 10%;
 
         .swiper {
             &-button {
@@ -160,11 +160,13 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-template-rows: 1fr 1fr 1fr 1fr;
-                gap: 10px 20px;
+                gap: 10px 10px;
             }
         }
 
+        
         .room {
+            //STYLES FOR LIST LAYOUT
             &--list {
                 width: 100%;
                 margin: auto;
@@ -175,7 +177,7 @@
             }
 
             &__img--list {
-                max-width: 450px;
+                max-width: 400px;
                 height: 305px;
             }
 
@@ -227,29 +229,32 @@
                     margin: auto;
                 }
             }
-        }
-        .room--grid {
-            width: 100%;
-            margin: auto;
 
-            &__container {
+            //STYLES FOR GRID LAYOUT
+            &--grid {
+                width: 100%;
+                margin: auto;
+            }    
+            &__container--grid {
                 display: block;
             }
-            &__img {
+            &__img--grid {
                 height: 200px;
             }
 
-            &__content {
+            &__content--grid {
                 margin: -20px auto auto auto;
             }
 
-            &__bar {
+            &__bar--grid {
                 margin: -20px auto auto auto;
                 width: 80%;
             }
-            &__text {
+            &__text{
+                &--grid {
                 padding-top: 25px;
-                &__description {
+                }
+                &__description--grid {
                     padding: 16px 30px 16px 30px;
                 }
             }
@@ -263,7 +268,7 @@
 
         .room {
             &__price {
-                right: 0;
+                right: 10%;
             }
         }
     }
