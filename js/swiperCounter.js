@@ -1,9 +1,10 @@
 const swiper = new Swiper('.swiper-counter', {
     direction: "horizontal",
-    loop: true,
-    // autoplay: {
-    //     delay: 4000,
-    // },
+    //loop: true,
+    autoplay: {
+        delay: 4000,
+    },
+    centeredSlides: true,
     breakpointsBase: 'window',
     breakpoints: {
         320: {
@@ -13,7 +14,7 @@ const swiper = new Swiper('.swiper-counter', {
         1000: {
             slidesPerView: 2,
             spaceBetween: 100,
-            centeredSlides: true,
+            
         }
     },
 

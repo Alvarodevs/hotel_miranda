@@ -6,7 +6,7 @@
 
     &--dark {
         background-color: colors.$black;
-
+        overflow: hidden;
         p {
             color: colors.$white;
         }
@@ -54,7 +54,7 @@
             font-family: fonts.$old;
             font-size: 30px;
             margin-bottom: 30px;
-
+            height: 75px;
             &--payment {
                 margin-top: 10px;
             }
@@ -97,10 +97,19 @@
 
         .grid-facilities {
             display: grid;
-            padding: 0 20%;
+            padding: 0 10%;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr;
             gap: 30px 3rem;
         }
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .facilities {
+        .grid-facilities {
+            padding: 0 15%;
+        }
+
     }
 }

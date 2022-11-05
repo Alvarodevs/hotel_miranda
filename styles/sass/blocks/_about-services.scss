@@ -9,13 +9,13 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        gap: 20px;
+        gap: 20px 0;
     }
 
     &__service {
-        width: 158px;
-        height: 158px;
-        padding: 40px 10px;
+        width: 140px;
+        height: 140px;
+        padding: 40px 0;
         margin: auto;
         &__img {
             color: colors.$gold-light;

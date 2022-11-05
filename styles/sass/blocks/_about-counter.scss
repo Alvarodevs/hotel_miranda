@@ -45,6 +45,7 @@
         }
     }
     .swiper-counter {
+        overflow: hidden;
         .swiper-wrapper {
             img {
                 width: 335px;
@@ -84,10 +85,9 @@
         
         &__images {
             display: flex;
-            margin: auto;
+            justify-content: center;
             img {
-                width: 570px;
-                height: 400px;
+                width: 40%;
                 margin: 0 30px;
             }
         }
