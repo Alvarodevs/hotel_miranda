@@ -23,23 +23,23 @@
         }
     }
 
-    .input__date--gold {
+    .input__date {
         display: flex;
         padding: 14px 0;
-        flex-direction: row-reverse;
-        background-color: transparent;
-        border-bottom: 2px solid colors.$gold-light;
         font-family: fonts.$roboto;
         color: colors.$grey-menu-dates;
-
-        &::-webkit-calendar-picker-indicator {
-            filter: invert(0.5) sepia(1);
-            
+        &--gold {
+            flex-direction: row-reverse;
+            background-color: transparent;
+            border-bottom: 2px solid colors.$gold-light;
+            &::-webkit-calendar-picker-indicator {
+                filter: invert(0.5) sepia(1);
+            }
         }
     }
     .button--gold {
-            border: none;
-            @include button(250px, colors.$gold-light);
+        border: none;
+        @include button(250px, colors.$gold-light);
     }
 }
 
