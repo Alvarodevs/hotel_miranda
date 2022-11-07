@@ -1,0 +1,25 @@
+@use "../colors";
+@use "../fonts";
+
+.cancellation {
+    padding: 63px 20px 100px 20px;
+
+    &__title {
+        font-family: fonts.$old;
+        font-size: 30px;
+        color: colors.$black;
+        margin-bottom: 47px;
+    }
+
+    &__description {
+        font-family: fonts.$roboto;
+        font-size: 16px;
+        color: colors.$grey-text;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .cancellation {
+        padding: 135px 40% 100px 23%;
+    }
+}

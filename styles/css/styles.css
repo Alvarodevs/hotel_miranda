@@ -1824,6 +1824,26 @@
     box-shadow: 0px 14px 24px rgba(190, 173, 142, 0.27);
   }
 }
+.cancellation {
+  padding: 63px 20px 100px 20px;
+}
+.cancellation__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 30px;
+  color: #222222;
+  margin-bottom: 47px;
+}
+.cancellation__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #777777;
+}
+
+@media only screen and (min-width: 1000px) {
+  .cancellation {
+    padding: 135px 40% 100px 23%;
+  }
+}
 .footer__content {
   padding: 0 20px;
   background-image: url("../../../assets/images/footer-background.svg");
