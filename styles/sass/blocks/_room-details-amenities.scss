@@ -1,2 +1,51 @@
 @use "../colors";
 @use "../fonts";
+
+.amenities {
+    padding: 0 20px 45px 20px;
+
+    &__title {
+        font-family: fonts.$old;
+        font-size: 30px;
+        color: colors.$black;
+    }
+
+    hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 35px;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 17px 40px;
+    }
+    &__item {
+        display: flex;
+
+        &__image {
+            margin-right: 8px;
+            min-width: 30px;
+
+            &--wifi{
+                width: 30px;
+            }
+        }
+
+        &__text {
+            font-family: fonts.$roboto;
+            font-size: 15px;
+            color: colors.$grey-text;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .amenities {
+        padding: 0 20% 45px 20%;
+
+        &__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
