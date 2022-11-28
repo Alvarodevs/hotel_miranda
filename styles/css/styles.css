@@ -1760,6 +1760,7 @@
 @media only screen and (min-width: 1000px) {
   .amenities {
     padding: 0 20% 45px 20%;
+    width: 80%;
   }
   .amenities__grid {
     display: grid;
@@ -1842,6 +1843,33 @@
 @media only screen and (min-width: 1000px) {
   .cancellation {
     padding: 135px 40% 100px 23%;
+  }
+}
+.related-rooms {
+  padding: 0 20px;
+}
+.related-rooms__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 30px;
+  color: #222222;
+  margin-bottom: 47px;
+}
+
+.room-home__bar--related {
+  top: 14rem;
+}
+.room-home__info--related {
+  margin-top: 1rem;
+}
+
+.swiper__buttons--related {
+  top: 3rem;
+  background-color: red;
+}
+
+@media only screen and (min-width: 1000px) {
+  .related-rooms {
+    padding: 75px 20% 115px 20%;
   }
 }
 .footer__content {

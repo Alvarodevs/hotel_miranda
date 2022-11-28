@@ -42,7 +42,7 @@
 @media only screen and (min-width: 1000px) {
     .amenities {
         padding: 0 20% 45px 20%;
-
+        width: 80%;
         &__grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);

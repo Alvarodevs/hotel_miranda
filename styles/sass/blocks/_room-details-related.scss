@@ -1,0 +1,36 @@
+@use "../colors";
+@use "../fonts";
+
+.related-rooms {
+    padding: 0 20px;
+
+    &__title {
+        font-family: fonts.$old;
+        font-size: 30px;
+        color: colors.$black;
+        margin-bottom: 47px;
+    }
+}
+
+.room-home {
+	&__bar--related {
+		top: 14rem;
+	}
+	&__info--related {
+		margin-top: 1rem;
+	}
+}
+
+.swiper__buttons{
+	&--related{
+		top: 3rem;
+		background-color: red;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+
+	.related-rooms {
+		padding: 75px 20% 115px 20%;
+	}
+}
