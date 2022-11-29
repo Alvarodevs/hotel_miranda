@@ -1,0 +1,57 @@
+@use "../colors";
+@use "../fonts";
+@import "../buttons.scss";
+
+.map-section {
+   #map {
+      margin: 50px auto;
+      height: 500px;
+      width: 80%;
+      background-color: grey;
+		button{
+			border: none;
+         @include button(150px, colors.$gold-light);
+			opacity: 0.8;
+			color: colors.$black;
+		}
+   }
+
+	&-inputs{
+		font-family: fonts.$roboto;
+
+		&-address {
+			#input-address{
+				font-family: fonts.$roboto;
+			}
+			#send-address{
+				@include button(100px, colors.$gold-dark);
+				border: none;
+				font-size: 18px;
+				margin-left: 10px;
+			}
+		}
+
+		&-regions{
+			#regions{
+				font-family: fonts.$roboto;
+				height: 30px;
+				font-size: 15px;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.map-section{
+		
+		#map{
+			width: 90%;
+		}
+		
+		&-inputs {
+			display: flex;
+			justify-content: space-evenly;
+			align-content: center;
+		}
+	}
+}

@@ -9,9 +9,7 @@
 	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="styles/css/styles.css" />
-
 	<script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
-
 
 <body>
 	<!-- HEADER -->
@@ -25,19 +23,19 @@
 					</div>
 
 					<!-- Nav for mobile -->
-					<nav class="nav__links__burger nav__links__burger--show" aria-label="nav-mobile">
-						<ul class="navbar__nav__list">
-							<li class="navbar__nav__list__link"><a href="#"></a>About</li>
-							<li class="navbar__nav__list__link"><a href="#"></a>Rooms</li>
-							<li class="navbar__nav__list__link"><a href="#"></a>Offers</li>
-							<li class="navbar__nav__list__link"><a href="#"></a>Contact</li>
+					<nav class="nav__links__burger nav__links__burger--show">
+						<ul class="navbar__nav__list navbar__nav__list--mobile">
+							<li class="navbar__nav__list__link"><a href="/about_us.html">About</a></li>
+							<li class="navbar__nav__list__link"><a href="/rooms_grid.html">Rooms</a></li>
+							<li class="navbar__nav__list__link"><a href="#">Offers</a></li>
+							<li class="navbar__nav__list__link"><a href="/contact.html">Contact</a></li>
 						</ul>
 					</nav>
 					<!-- Nav for mobile -->
 
 					<div class="nav__menu__links">
 						<div class="nav__menu__links__home">
-							<div class="nav__menu__links__home__logo">H</div>
+							<div class="nav__menu__links__home__logo"><a href="/">H</a></div>
 
 							<div class="nav__menu__links__home__text">
 								<span>HOTEL</span>
@@ -47,12 +45,12 @@
 						</div>
 
 						<!-- Nav for desktop -->
-						<nav class="nav__menu__links__desktop" aria-label="nav-desktop">
-							<ul class="navbar__nav__list">
-								<li class="navbar__nav__list__link"><a href="#"></a>About</li>
-								<li class="navbar__nav__list__link"><a href="#"></a>Rooms</li>
-								<li class="navbar__nav__list__link"><a href="#"></a>Offers</li>
-								<li class="navbar__nav__list__link"><a href="#"></a>Contact</li>
+						<nav class="nav__menu__links__desktop">
+							<ul class="navbar__nav__list navbar__nav__list--desktop">
+								<li class="navbar__nav__list__link"><a href="/about_us.html">About</a></li>
+								<li class="navbar__nav__list__link"><a href="/rooms_list.html">Rooms</a></li>
+								<li class="navbar__nav__list__link"><a href="#">Offers</a></li>
+								<li class="navbar__nav__list__link"><a href="/contact.html">Contact</a></li>
 							</ul>
 						</nav>
 						<!-- Nav for desktop -->
@@ -129,22 +127,23 @@
 	</section>
 
 	<!-- MAP -->
-	<div class="contact-container--map">
+	<section class="map-section">
 		<div id="map"></div>
-		<div>
-			<label for="input-address">Please, enter location</label>
-			<input id="input-address" type="text" />
-			<button id="send-address">Send</button>
+		<div class="map-section-inputs">
+			<div class="map-section-inputs-address">
+				<label for="input-address">Please, enter location</label>
+				<input id="input-address" type="text" />
+				<button id="send-address">Send</button>
+				<div id="distances"></div>
+			</div>
+			<div class="map-section-inputs-regions">
+				<label for="regions">Please, select your region</label>
+				<select name="regions" id="regions">
+					<option value="" disabled selected>Select your region</option>
+				</select>
+			</div>
 		</div>
-		<div id="distances"></div>	
-		
-		<div>
-			<label for="comunidades">Please, select your region</label>
-			<select name="comunidades" id="comunidades">
-				<option value="" disabled selected>Select your region</option>
-			</select>
-		</div>
-	</div>
+	</section>
 	<!-- FORM -->
 
 	<!-- FOOTER -->
