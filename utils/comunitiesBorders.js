@@ -1,4 +1,4 @@
-var espanaComunidades = [
+const borders = [
     [
         [
             {

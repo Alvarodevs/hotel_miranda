@@ -1,4 +1,4 @@
-[
+const hotels = [
    {
       "name": "Hotel Don Paco",
       "lat": 36.7116,

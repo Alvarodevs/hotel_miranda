@@ -58,3 +58,12 @@
     width: 80%;
     background-color: grey;
 }
+
+
+@media only screen and (min-width: 1000px) {
+	.contact{
+		&_info_container {
+			display: flex;
+		}
+	}
+}
