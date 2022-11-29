@@ -18,7 +18,7 @@
 
 	&-inputs{
 		font-family: fonts.$roboto;
-
+		margin: auto;
 		&-address {
 			#input-address{
 				font-family: fonts.$roboto;
@@ -36,6 +36,7 @@
 				font-family: fonts.$roboto;
 				height: 30px;
 				font-size: 15px;
+				margin: auto;
 			}
 		}
 	}
@@ -51,7 +52,7 @@
 		&-inputs {
 			display: flex;
 			justify-content: space-evenly;
-			align-content: center;
+			align-items: center;
 		}
 	}
 }

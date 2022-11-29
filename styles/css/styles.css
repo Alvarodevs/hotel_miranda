@@ -1960,6 +1960,7 @@
 }
 .map-section-inputs {
   font-family: "Roboto", sans-serif;
+  margin: auto;
 }
 .map-section-inputs-address #input-address {
   font-family: "Roboto", sans-serif;
@@ -1981,6 +1982,7 @@
   font-family: "Roboto", sans-serif;
   height: 30px;
   font-size: 15px;
+  margin: auto;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -1990,7 +1992,7 @@
   .map-section-inputs {
     display: flex;
     justify-content: space-evenly;
-    align-content: center;
+    align-items: center;
   }
 }
 .footer__content {
