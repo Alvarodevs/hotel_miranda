@@ -6,9 +6,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Hotel Miranda</title>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="styles/css/styles.css" />
-</head>
+
+	<script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+
 
 <body>
 	<!-- HEADER -->
@@ -86,8 +89,63 @@
 		</div>
 	</section>
 
+	<!-- CONTACT INFO -->
+	<section class="contact">
+		<div class="contact_info_container">
+			<div class="card">
+				<div class="info-container">
+					<img class="info-container__img" src="/assets/icons/contact/location.svg" alt="Location">
+					<div class="text-container">
+						<p class="text-container__title">Hotel Address</p>
+						<p class="text-container__description">19/A, Cirikon City hall Tower New York, NYC</p>
+					</div>
+				</div>
+				<div class="card__img-background">01</div>
+			</div>
+			<div class="card">
+				<div class="info-container">
+					<img class="info-container__img" src="/assets/icons/contact/phone.svg" alt="Phone">
+					<div class="text-container">
+						<p class="text-container__title">Phone Number</p>
+						<p class="text-container__description">+ 97656 8675 7864 7</p> <br>
+						<p class="text-container__description">+ 876 766 8675 765 6</p>
+					</div>
+				</div>
+				<div class="card__img-background">02</div>
+			</div>
+			<div class="card">
+				<div class="info-container">
+					<img class="info-container__img" src="/assets/icons/contact/mail.svg" alt="Mail">
+					<div class="text-container">
+						<p class="text-container__title">Email</p>
+						<p class="text-container__description">info@webmail.com</p> <br>
+						<p class="text-container__description">jobs.webmail@mail.com</p>
+					</div>
+				</div>
+				<div class="card__img-background">03</div>
+			</div>
+		</div>
 
-	<!-- ---------------------- -->
+	</section>
+
+	<!-- MAP -->
+	<div class="contact-container--map">
+		<div id="map"></div>
+		<div>
+			<label for="input-address">Please, enter location</label>
+			<input id="input-address" type="text" />
+			<button id="send-address">Send</button>
+		</div>
+		<div id="distances"></div>	
+		
+		<div>
+			<label for="comunidades">Please, select your region</label>
+			<select name="comunidades" id="comunidades">
+				<option value="" disabled selected>Select your region</option>
+			</select>
+		</div>
+	</div>
+	<!-- FORM -->
 
 	<!-- FOOTER -->
 	<footer class="footer">
@@ -194,11 +252,12 @@
 		</div>
 	</footer>
 
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<script type="module" src="/js/index.js"></script>
-	<script type="module" src="/js/swiper.js"></script>
-	<script type="module" src="/js/swiperFacilities.js"></script>
-	<script type="module" src="/js/swiperRoomList.js"></script>
+	<script defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-DEPzG-iWOXK15xqXl19vNJUsqNtv0yA&callback=initMap">
+		</script>
+	<script src="/js/maps.js"></script>
+
 </body>
 
 </html>

@@ -1872,6 +1872,59 @@
     padding: 75px 20% 115px 20%;
   }
 }
+.contact {
+  padding: 20px;
+}
+.contact_info_container {
+  padding: 20px 0;
+}
+.contact_info_container .card {
+  align-items: center;
+  position: relative;
+  padding: 50px 15px 0 15px;
+  height: 235px;
+  max-width: 400px;
+  margin: auto;
+}
+.contact_info_container .card .info-container {
+  display: flex;
+  align-items: flex-start;
+}
+.contact_info_container .card .info-container__img {
+  margin: 0px 0 0 0;
+}
+.contact_info_container .card .info-container .text-container {
+  padding-left: 27px;
+  max-width: 200px;
+}
+.contact_info_container .card .info-container .text-container__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.contact_info_container .card .info-container .text-container__description {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  color: #777777;
+}
+.contact_info_container .card__img-background {
+  position: absolute;
+  bottom: 0;
+  right: 12px;
+  font-family: "Archivo", sans-serif;
+  font-size: 200px;
+  color: #333333;
+  opacity: 4%;
+  font-weight: 700;
+}
+
+#map {
+  margin: 50px auto;
+  height: 500px;
+  width: 80%;
+  background-color: grey;
+}
+
 .footer__content {
   padding: 0 20px;
   background-image: url("../../../assets/images/footer-background.svg");

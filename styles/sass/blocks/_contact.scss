@@ -1,0 +1,60 @@
+@use "../colors";
+@use "../fonts";
+
+.contact {
+   padding: 20px;
+
+   &_info_container {
+      padding: 20px 0;
+      .card {
+         //display: flex;
+         align-items: center;
+         position: relative;
+         padding: 50px 15px 0 15px;
+         height: 235px;
+         max-width: 400px;
+         margin: auto;
+         .info-container {
+				display: flex;
+				align-items: flex-start;
+            &__img {
+               margin: 0px 0 0 0;
+               
+            }
+				.text-container{
+					padding-left: 27px;
+					max-width: 200px;
+
+            &__title {
+               font-family: fonts.$old;
+               font-size: 20px;
+               margin-bottom: 20px;
+            }
+            &__description {
+               font-family: fonts.$archivo;
+               font-size: 14px;
+               color: colors.$grey-text;
+            }
+			}
+         }
+			&__img {
+				&-background {
+                  position: absolute;
+                  bottom: 0;
+                  right: 12px;
+                  font-family: fonts.$archivo;
+                  font-size: 200px;
+                  color: colors.$grey-dark;
+                  opacity: 4%;
+                  font-weight: 700;
+               }
+			}
+      }
+   }
+}
+#map {
+    margin: 50px auto;
+    height: 500px;
+    width: 80%;
+    background-color: grey;
+}
