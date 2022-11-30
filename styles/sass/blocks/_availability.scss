@@ -14,9 +14,11 @@
 
     &__input {
         width: 100%;
-        margin-bottom: 30px;
+        margin: 30px 0;
         border: none;
-        font-size: 0.8rem;
+        font-size: 14px;
+		  padding-bottom: 14px;
+		  color: colors.$grey-menu-dates;
 
         &:focus {
             outline: none;
