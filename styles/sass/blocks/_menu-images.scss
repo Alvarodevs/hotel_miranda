@@ -18,22 +18,22 @@
                         background-repeat: no-repeat;
                         background-size: cover;
                         &--cheese {
-                            background-image: url("/assets/images/menu_imgs/cheese.jpg");
+                            background-image: url(../assets/images/menu_imgs/cheese.jpg);
                         }
                         &--coffee {
-                            background-image: url("/assets/images/menu_imgs/tea-coffee.jpg");
+                            background-image: url(../assets/images/menu_imgs/tea-coffee.jpg);
                         }
                         &--fruit {
-                            background-image: url("/assets/images/menu_imgs/fruit.jpg");
+                            background-image: url(../assets/images/menu_imgs/fruit.jpg);
                         }
                         &--chia {
-                            background-image: url("/assets/images/menu_imgs/chia-oatmeal.jpg");
+                            background-image: url(../assets/images/menu_imgs/chia-oatmeal.jpg);
                         }
                         &--eggs {
-                            background-image: url("/assets/images/menu_imgs/eggs-bacon.jpg");
+                            background-image: url(../assets/images/menu_imgs/eggs-bacon.jpg);
                         }
                         &--marmelade {
-                            background-image: url("/assets/images/menu_imgs/marmelade.jpg");
+                            background-image: url(../assets/images/menu_imgs/marmelade.jpg);
                         }
                     }
                 }
