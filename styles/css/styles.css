@@ -296,9 +296,11 @@
 }
 .availability__input {
   width: 100%;
-  margin-bottom: 30px;
+  margin: 30px 0;
   border: none;
-  font-size: 0.8rem;
+  font-size: 14px;
+  padding-bottom: 14px;
+  color: #686868;
 }
 .availability__input:focus {
   outline: none;
@@ -399,7 +401,7 @@
 .about__card__img {
   width: inherit;
   height: 300px;
-  background-image: url("/assets/images/lux-hotel.jpg");
+  background-image: url("../../../assets/images/lux-hotel.jpg");
   background-size: cover;
 }
 .about__card__description {
@@ -1455,7 +1457,7 @@
 .rooms-list .room__img {
   width: 100%;
   height: 220px;
-  background-image: url("/assets/images/room.jpg");
+  background-image: url("../../../assets/images/room.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
