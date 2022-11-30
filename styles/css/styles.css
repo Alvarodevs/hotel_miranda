@@ -401,7 +401,7 @@
 .about__card__img {
   width: inherit;
   height: 300px;
-  background-image: url("assets/images/lux-hotel.jpg");
+  background-image: url(assets/images/lux-hotel.jpg);
   background-size: cover;
 }
 .about__card__description {
@@ -1999,7 +1999,7 @@
 }
 .footer__content {
   padding: 0 20px;
-  background-image: url("../../../assets/images/footer-background.svg");
+  background-image: url("assets/images/footer-background.svg");
 }
 .footer__description {
   padding-top: 30px;
