@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&family=Oswald:wght@700&family=Old+Standard+TT&family=Roboto:wght@400&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&family=Oswald:wght@700&family=Old+Standard+TT&family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&family=Oswald:wght@700&family=Old+Standard+TT&family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&family=Oswald:wght@700&family=Old+Standard+TT&family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&family=Oswald:wght@700&family=Old+Standard+TT&family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&family=Oswald:wght@700&family=Old+Standard+TT&family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&family=Oswald:wght@700&family=Old+Standard+TT&family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&family=Oswald:wght@700&family=Old+Standard+TT&family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400&family=Oswald:wght@700&family=Old+Standard+TT&family=Roboto:wght@400&display=swap");
 .header__container {
   width: 100%;
   height: 70px;
@@ -58,7 +65,7 @@
 }
 .header__container__content .navbar__container .nav__links .burger-icon--close {
   padding-top: 5px;
-  content: url(hotel_miranda/assets/icons/mobile_view/close_btn.svg);
+  content: url(../../../assets/icons/mobile_view/close_btn.svg);
 }
 .header__container__content .navbar__container .nav__links .nav__menu__links {
   display: block;
@@ -394,7 +401,7 @@
 .about__card__img {
   width: inherit;
   height: 300px;
-  background-image: url(hotel_miranda/assets/images/lux-hotel.jpg);
+  background-image: url(/assets/images/lux-hotel.jpg);
   background-size: cover;
 }
 .about__card__description {
@@ -513,7 +520,7 @@
 .rooms .swiper-button--next {
   width: 100%;
   height: 100%;
-  background-image: url(hotel_miranda/assets/icons/chevron-right.svg);
+  background-image: url(../../../assets/icons/chevron-right.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -521,7 +528,7 @@
 .rooms .swiper-button--prev {
   width: 100%;
   height: 100%;
-  background-image: url(hotel_miranda/assets/icons/chevron-left.svg);
+  background-image: url(../../../assets/icons/chevron-left.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -593,7 +600,7 @@
   z-index: -1;
 }
 .room-home__img {
-  background-image: url(hotel_miranda/assets/images/lux-hotel.jpg);
+  background-image: url(../../../assets/images/lux-hotel.jpg);
   width: 375px;
   height: 245px;
   background-size: cover;
@@ -1031,22 +1038,22 @@
   background-size: cover;
 }
 .menu .swiper-menu-images .swiper-wrapper .swiper-slide .image__container .image__menu--cheese {
-  background-image: url(hotel_miranda/assets/images/menu_imgs/cheese.jpg);
+  background-image: url(../../../assets/images/menu_imgs/cheese.jpg);
 }
 .menu .swiper-menu-images .swiper-wrapper .swiper-slide .image__container .image__menu--coffee {
-  background-image: url(hotel_miranda/assets/images/menu_imgs/tea-coffee.jpg);
+  background-image: url(../../../assets/images/menu_imgs/tea-coffee.jpg);
 }
 .menu .swiper-menu-images .swiper-wrapper .swiper-slide .image__container .image__menu--fruit {
-  background-image: url(hotel_miranda/assets/images/menu_imgs/fruit.jpg);
+  background-image: url(../../../assets/images/menu_imgs/fruit.jpg);
 }
 .menu .swiper-menu-images .swiper-wrapper .swiper-slide .image__container .image__menu--chia {
-  background-image: url(hotel_miranda/assets/images/menu_imgs/chia-oatmeal.jpg);
+  background-image: url(../../../assets/images/menu_imgs/chia-oatmeal.jpg);
 }
 .menu .swiper-menu-images .swiper-wrapper .swiper-slide .image__container .image__menu--eggs {
-  background-image: url(hotel_miranda/assets/images/menu_imgs/eggs-bacon.jpg);
+  background-image: url(../../../assets/images/menu_imgs/eggs-bacon.jpg);
 }
 .menu .swiper-menu-images .swiper-wrapper .swiper-slide .image__container .image__menu--marmelade {
-  background-image: url(hotel_miranda/assets/images/menu_imgs/marmelade.jpg);
+  background-image: url(../../../assets/images/menu_imgs/marmelade.jpg);
 }
 .menu .swiper-menu-images .swiper-menu-images-pagination {
   display: flex;
@@ -1171,20 +1178,20 @@
   margin: auto auto 13px auto;
 }
 .icons__service__img--breakfast {
-  background-image: url(hotel_miranda/assets/icons/about_us/breakfast.svg);
+  background-image: url(../../../assets/icons/about_us/breakfast.svg);
 }
 .icons__service__img--airport {
   filter: invert(0.45) sepia(1);
-  background-image: url(hotel_miranda/assets/icons/about_us/plane.svg);
+  background-image: url(../../../assets/icons/about_us/plane.svg);
 }
 .icons__service__img--city {
-  background-image: url(hotel_miranda/assets/icons/about_us/location.svg);
+  background-image: url(../../../assets/icons/about_us/location.svg);
 }
 .icons__service__img--bbq {
-  background-image: url(hotel_miranda/assets/icons/about_us/bbq.svg);
+  background-image: url(../../../assets/icons/about_us/bbq.svg);
 }
 .icons__service__img--room {
-  background-image: url(hotel_miranda/assets/icons/about_us/luxury_room.svg);
+  background-image: url(../../../assets/icons/about_us/luxury_room.svg);
 }
 .icons__service__title {
   font-family: "Archivo", sans-serif;
@@ -1232,7 +1239,7 @@
   margin: auto;
 }
 .restaurant__img {
-  background-image: url(hotel_miranda/assets/images/restaurant.jpg);
+  background-image: url(../../../assets/images/restaurant.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1435,10 +1442,10 @@
   background-size: cover;
 }
 .rooms-list .swiper-button .prev-img {
-  background-image: url(hotel_miranda/assets/icons/double_chevron_left.svg);
+  background-image: url(../../../assets/icons/double_chevron_left.svg);
 }
 .rooms-list .swiper-button .next-img {
-  background-image: url(hotel_miranda/assets/icons/double_chevron_right.svg);
+  background-image: url(../../../assets/icons/double_chevron_right.svg);
 }
 .rooms-list .room {
   width: 335px;
@@ -1450,7 +1457,7 @@
 .rooms-list .room__img {
   width: 100%;
   height: 220px;
-  background-image: url(hotel_miranda/assets/images/room.jpg);
+  background-image: url(../../../assets/images/room.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1895,7 +1902,7 @@
   padding: 50px 15px 0 15px;
   height: 235px;
   max-width: 400px;
-  margin: auto 10rem;
+  margin: auto;
 }
 .contact_info_container .card .info-container {
   display: flex;
@@ -1921,7 +1928,7 @@
 .contact_info_container .card__img-background {
   position: absolute;
   bottom: 0;
-  right: 12px;
+  left: 8rem;
   font-family: "Archivo", sans-serif;
   font-size: 200px;
   color: #333333;
@@ -1932,6 +1939,9 @@
 @media only screen and (min-width: 1000px) {
   .contact_info_container {
     display: flex;
+  }
+  .contact_info_container .card {
+    margin: auto auto auto 5rem;
   }
 }
 .map-section #map {
@@ -1992,7 +2002,7 @@
 }
 .footer__content {
   padding: 0 20px;
-  background-image: url(hotel_miranda/assets/images/footer-background.svg);
+  background-image: url(../../../assets/images/footer-background.svg);
 }
 .footer__description {
   padding-top: 30px;
