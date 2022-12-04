@@ -150,6 +150,10 @@
         &__link {
             text-decoration: none;
         }
+		  a{
+			text-decoration: none;
+			color: colors.$red-pale;
+		  }
     }
 }
 

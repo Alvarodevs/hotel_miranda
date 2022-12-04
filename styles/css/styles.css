@@ -65,7 +65,9 @@
 }
 .header__container__content .navbar__container .nav__links .burger-icon--close {
   padding-top: 5px;
-  content: url(../assets/icons/mobile_view/close_btn.svg);
+}
+.header__container__content .navbar__container .nav__links .burger-icon .hidden {
+  display: none;
 }
 .header__container__content .navbar__container .nav__links .nav__menu__links {
   display: block;
@@ -519,7 +521,6 @@
 .rooms .swiper-button--next {
   width: 100%;
   height: 100%;
-  background-image: url(../assets/icons/chevron-right.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -527,7 +528,6 @@
 .rooms .swiper-button--prev {
   width: 100%;
   height: 100%;
-  background-image: url(../assets/icons/chevron-left.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -574,14 +574,12 @@
     padding: 0;
   }
   .rooms .swiper-slide {
-    width: 900px !important;
-    margin-left: -5rem;
+    transform: translateX(-70px);
   }
   .rooms .swiper__buttons {
     width: 100%;
     left: auto;
     right: auto;
-    top: 15rem;
     padding: 0 20%;
   }
   .rooms .swiper-button {
@@ -590,16 +588,36 @@
     padding: 30px;
   }
 }
+@media only screen and (min-width: 1140px) {
+  .rooms .swiper-slide {
+    transform: translateX(-40px);
+  }
+}
+@media only screen and (min-width: 1240px) {
+  .rooms .swiper-slide {
+    transform: translateX(-20px);
+  }
+}
+@media only screen and (min-width: 1430px) {
+  .rooms .swiper-slide {
+    transform: translateX(5%);
+  }
+}
+@media only screen and (min-width: 1460px) {
+  .rooms .swiper-slide {
+    transform: translateX(10%);
+  }
+}
 .room-home {
-  margin: auto;
+  width: fit-content;
   display: block;
+  margin: auto;
 }
 .room-home__main-container {
   position: relative;
   z-index: -1;
 }
 .room-home__img {
-  background-image: url(../assets/images/lux-hotel.jpg);
   width: 375px;
   height: 245px;
   background-size: cover;
@@ -853,6 +871,9 @@
 .facilities .card--dark {
   background-color: #292929;
 }
+.facilities .swiper-facilities {
+  overflow: hidden;
+}
 .facilities .swiper-facilities__pagination {
   margin-top: 32px;
   display: flex;
@@ -888,6 +909,7 @@
 .menu {
   padding: 115px 20px 60px 20px;
   position: relative;
+  overflow: hidden;
 }
 .menu__img {
   position: absolute;
@@ -910,6 +932,9 @@
 }
 .menu .swiper-menu {
   position: relative;
+}
+.menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column {
+  overflow: hidden;
 }
 .menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column .food {
   display: flex;
@@ -1020,55 +1045,44 @@
     height: 20px;
   }
 }
-.menu .swiper-menu-images {
-  margin-top: 5rem;
+.swiper-menu-images {
+  margin: 5rem auto;
   overflow: hidden;
 }
-.menu .swiper-menu-images .swiper-wrapper .swiper-slide .image__container {
+.swiper-menu-images .swiper-wrapper .swiper-slide .image__container {
   width: 335px;
   height: 335px;
-  margin: 0 0.5rem;
+  margin: 0 auto;
 }
-.menu .swiper-menu-images .swiper-wrapper .swiper-slide .image__container .image__menu {
+.swiper-menu-images .swiper-wrapper .swiper-slide .image__container .image__menu {
   width: 100%;
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.menu .swiper-menu-images .swiper-wrapper .swiper-slide .image__container .image__menu--cheese {
-  background-image: url(../assets/images/menu_imgs/cheese.jpg);
-}
-.menu .swiper-menu-images .swiper-wrapper .swiper-slide .image__container .image__menu--coffee {
-  background-image: url(../assets/images/menu_imgs/tea-coffee.jpg);
-}
-.menu .swiper-menu-images .swiper-wrapper .swiper-slide .image__container .image__menu--fruit {
-  background-image: url(../assets/images/menu_imgs/fruit.jpg);
-}
-.menu .swiper-menu-images .swiper-wrapper .swiper-slide .image__container .image__menu--chia {
-  background-image: url(../assets/images/menu_imgs/chia-oatmeal.jpg);
-}
-.menu .swiper-menu-images .swiper-wrapper .swiper-slide .image__container .image__menu--eggs {
-  background-image: url(../assets/images/menu_imgs/eggs-bacon.jpg);
-}
-.menu .swiper-menu-images .swiper-wrapper .swiper-slide .image__container .image__menu--marmelade {
-  background-image: url(../assets/images/menu_imgs/marmelade.jpg);
-}
-.menu .swiper-menu-images .swiper-menu-images-pagination {
+.swiper-menu-images .swiper-menu-images-pagination {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
-.menu .swiper-menu-images .swiper-pagination-bullet-active {
+.swiper-menu-images .swiper-pagination-bullet-active {
   background-color: #bead8e;
 }
 
 @media only screen and (min-width: 1000px) {
-  .menu .swiper-menu-images .swiper-wrapper .swiper-slide .image__container {
-    margin: 0 0 0 -8rem;
+  .swiper-menu-images {
+    margin: 5rem 10% 120px 10%;
+    overflow: hidden;
+  }
+  .swiper-menu-images .swiper-wrapper .swiper-slide .image__container {
+    transform: translateX(-10%);
   }
 }
 .stats {
+  width: 100%;
+}
+.stats-container {
   padding: 48px 80px;
   background-color: #222222;
   margin-bottom: 120px;
@@ -1076,7 +1090,7 @@
 .stats__card {
   width: 210px;
   text-align: center;
-  margin-bottom: 60px;
+  margin: 0 auto 60px auto;
 }
 .stats__card img {
   width: 78px;
@@ -1099,19 +1113,21 @@
 
 @media only screen and (min-width: 1000px) {
   .stats {
+    padding: 0 10%;
+  }
+  .stats-container {
     display: flex;
     padding: 80px;
     justify-content: space-between;
-    margin: 0 15% 120px 15%;
     align-content: center;
     height: 348px;
-    width: 1170px;
+    width: 100%;
   }
-  .stats__card {
+  .stats-container__card {
     margin-top: auto;
     text-align: start;
   }
-  .stats__card--backers {
+  .stats-container__card--backers {
     margin-right: 110px;
   }
 }
@@ -1176,21 +1192,8 @@
   height: 50px;
   margin: auto auto 13px auto;
 }
-.icons__service__img--breakfast {
-  background-image: url(../assets/icons/about_us/breakfast.svg);
-}
-.icons__service__img--airport {
+.icons__service__img--plane {
   filter: invert(0.45) sepia(1);
-  background-image: url(../assets/icons/about_us/plane.svg);
-}
-.icons__service__img--city {
-  background-image: url(../assets/icons/about_us/location.svg);
-}
-.icons__service__img--bbq {
-  background-image: url(../assets/icons/about_us/bbq.svg);
-}
-.icons__service__img--room {
-  background-image: url(../assets/icons/about_us/luxury_room.svg);
 }
 .icons__service__title {
   font-family: "Archivo", sans-serif;
@@ -1344,6 +1347,7 @@
 }
 .counter .swiper-counter {
   overflow: hidden;
+  text-align: center;
 }
 .counter .swiper-counter .swiper-wrapper img {
   width: 335px;
@@ -1440,11 +1444,8 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.rooms-list .swiper-button .prev-img {
-  background-image: url(../assets/icons/double_chevron_left.svg);
-}
-.rooms-list .swiper-button .next-img {
-  background-image: url(../assets/icons/double_chevron_right.svg);
+.rooms-list .swiper-button .prev-img, .rooms-list .swiper-button .next-img {
+  cursor: pointer;
 }
 .rooms-list .room {
   width: 335px;
@@ -1456,7 +1457,6 @@
 .rooms-list .room__img {
   width: 100%;
   height: 220px;
-  background-image: url(../assets/images/room.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1924,6 +1924,12 @@
   font-size: 14px;
   color: #777777;
 }
+.contact_info_container .card .info-container .text-container__description a {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  color: #777777;
+  text-decoration: none;
+}
 .contact_info_container .card__img-background {
   position: absolute;
   bottom: 0;
@@ -2124,6 +2130,10 @@
 }
 .footer__copyright__link {
   text-decoration: none;
+}
+.footer__copyright a {
+  text-decoration: none;
+  color: #DE5777;
 }
 
 @media only screen and (min-width: 1000px) {

@@ -25,21 +25,8 @@
             width: 58px;
             height: 50px;
             margin: auto auto 13px auto;
-            &--breakfast {
-                background-image: url(../assets/icons/about_us/breakfast.svg);
-            }
-            &--airport {
+            &--plane {
                 filter: invert(0.45) sepia(1);
-                background-image: url(../assets/icons/about_us/plane.svg);
-            }
-            &--city {
-                background-image: url(../assets/icons/about_us/location.svg);
-            }
-            &--bbq {
-                background-image: url(../assets/icons/about_us/bbq.svg);
-            }
-            &--room {
-                background-image: url(../assets/icons/about_us/luxury_room.svg);
             }
         }
 

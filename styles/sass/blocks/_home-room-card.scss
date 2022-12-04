@@ -2,21 +2,19 @@
 @use "../fonts";
 
 .room-home {
-    margin: auto;
+    width: fit-content;
     display: block;
+	 margin: auto;
     &__main-container {
         position: relative;
         z-index: -1; 
     }
-
     &__img {
-        background-image: url(../assets/images/lux-hotel.jpg);
         width: 375px;
         height: 245px;
         background-size: cover;
         background-position: center;
         margin: auto;
-        
     }
 
     &__bar {

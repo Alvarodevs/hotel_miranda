@@ -1,40 +1,22 @@
 @use "../colors";
 @use "../fonts";
 
-.menu {
     .swiper-menu-images {
-        margin-top: 5rem;
+		  margin: 5rem auto;
         overflow: hidden;
+		  
         .swiper-wrapper {
             .swiper-slide {
                 .image__container {
                     width: 335px;
                     height: 335px;
-                    margin: 0 0.5rem;
+                    margin: 0 auto;
                     .image__menu {
                         width: 100%;
                         height: 100%;
                         background-position: center;
                         background-repeat: no-repeat;
                         background-size: cover;
-                        &--cheese {
-                            background-image: url(../assets/images/menu_imgs/cheese.jpg);
-                        }
-                        &--coffee {
-                            background-image: url(../assets/images/menu_imgs/tea-coffee.jpg);
-                        }
-                        &--fruit {
-                            background-image: url(../assets/images/menu_imgs/fruit.jpg);
-                        }
-                        &--chia {
-                            background-image: url(../assets/images/menu_imgs/chia-oatmeal.jpg);
-                        }
-                        &--eggs {
-                            background-image: url(../assets/images/menu_imgs/eggs-bacon.jpg);
-                        }
-                        &--marmelade {
-                            background-image: url(../assets/images/menu_imgs/marmelade.jpg);
-                        }
                     }
                 }
             }
@@ -49,18 +31,20 @@
             background-color: colors.$gold-light;
         }
     }
-}
+
 
 @media only screen and (min-width: 1000px) {
-    .menu {
+    
         .swiper-menu-images {
+			margin: 5rem 10% 120px 10%;
+			overflow: hidden;
             .swiper-wrapper {
                 .swiper-slide {
                     .image__container {
-                        margin: 0 0 0 -8rem;
+                        transform: translateX(-10%);
                     }
                 }
             }
         }
     }
-}
+

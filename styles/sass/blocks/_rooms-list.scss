@@ -63,11 +63,8 @@
                 background-repeat: no-repeat;
                 background-size: cover;
             }
-            .prev-img {
-                background-image: url(../assets/icons/double_chevron_left.svg);
-            }
-            .next-img {
-                background-image: url(../assets/icons/double_chevron_right.svg);
+            .prev-img, .next-img {
+                cursor: pointer;
             }
         }
     }
@@ -83,7 +80,6 @@
         &__img {
             width: 100%;
             height: 220px;
-            background-image: url(../assets/images/room.jpg);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;

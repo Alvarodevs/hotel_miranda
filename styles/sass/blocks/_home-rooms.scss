@@ -2,140 +2,176 @@
 @use "../fonts";
 
 .rooms {
-    padding: 60px 0;
-    &__title {
-        font-family: fonts.$old;
-        font-size: 50px;
-        text-align: center;
+   padding: 60px 0;
+   &__title {
+      font-family: fonts.$old;
+      font-size: 50px;
+      text-align: center;
 
-        &--small {
-            font-size: 14px;
-            font-family: fonts.$archivo;
-            margin-bottom: 24px;
-            color: colors.$grey-text;
-            letter-spacing: 3px;
-        }
-    }
+      &--small {
+         font-size: 14px;
+         font-family: fonts.$archivo;
+         margin-bottom: 24px;
+         color: colors.$grey-text;
+         letter-spacing: 3px;
+      }
+   }
 
-    .swiper {
-        padding: 45px 0;
-        position: relative;
-        &__buttons {
-            display: flex;
-            position: absolute;
-            top: 9rem;
-            padding: 0 5%;
-            z-index: 1;
+   .swiper {
+      padding: 45px 0;
+      position: relative;
+      &__buttons {
+         display: flex;
+         position: absolute;
+         top: 9rem;
+         padding: 0 5%;
+         z-index: 1;
+         width: 100%;
+         justify-content: space-between;
+      }
+      &-button {
+         width: 32px;
+         height: 32px;
+         padding: 12px;
+         background-color: colors.$white;
+
+         &--next {
             width: 100%;
-            justify-content: space-between;
-        }
-        &-button {
-            width: 32px;
-            height: 32px;
-            padding: 12px;
-            background-color: colors.$white;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+         }
 
-            &--next {
-                width: 100%;
-                height: 100%;
-                background-image: url(../assets/icons/chevron-right.svg);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: contain;
-            }
+         &--prev {
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+         }
 
-            &--prev {
-                width: 100%;
-                height: 100%;
-                background-image: url(../assets/icons/chevron-left.svg);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: contain;
+         &:hover {
+            background-color: colors.$gold-light;
+            .swiper-button {
+               &--next,
+               &--prev {
+                  filter: brightness(0) invert(1);
+               }
             }
-
-            &:hover {
-                background-color: colors.$gold-light;
-                .swiper-button {
-                    &--next,
-                    &--prev {
-                        filter: brightness(0) invert(1);
-                    }
-                }
-            }
-        }
-    }
+         }
+      }
+   }
 }
 
 @media only screen and (min-width: 395px) {
-    .rooms {
-        .swiper {
-            &__buttons {
-                width: 80%;
-                left: 10%;
-                right: 10%;
-            }
-            &-button {
-                width: 40px;
-                height: 40px;
-            }
-        }
-    }
+   .rooms {
+      .swiper {
+         &__buttons {
+            width: 80%;
+            left: 10%;
+            right: 10%;
+         }
+         &-button {
+            width: 40px;
+            height: 40px;
+         }
+      }
+   }
 }
 @media only screen and (min-width: 450px) {
-    .rooms {
-        .swiper {
-            &__buttons {
-                width: 80%;
-            }
-        }
-    }
+   .rooms {
+      .swiper {
+         &__buttons {
+            width: 80%;
+         }
+      }
+   }
 }
 
 @media only screen and (min-width: 610px) {
-    .rooms {
-        .swiper {
-            &__buttons {
-                left: 20%;
-                right: 20%;
-                width: 60%;
-            }
-        }
-    }
+   .rooms {
+      .swiper {
+         &__buttons {
+            left: 20%;
+            right: 20%;
+            width: 60%;
+         }
+      }
+   }
 }
 
 @media only screen and (min-width: 855px) {
-    .rooms {
-        .swiper {
-            &__buttons {
-                left: 25%;
-                right: 25%;
-                width: 50%;
-            }
-        }
-    }
+   .rooms {
+      .swiper {
+         &__buttons {
+            left: 25%;
+            right: 25%;
+            width: 50%;
+         }
+      }
+   }
 }
 
 @media only screen and (min-width: 1000px) {
-    .rooms {
-        padding: 0;
+   .rooms {
+      padding: 0;
 
-        .swiper {
-            &-slide{
-                width: 900px!important;
-                margin-left: -5rem;
-            }
-            &__buttons {
-                width: 100%;
-                left: auto;
-                right: auto;
-                top: 15rem;
-                padding: 0 20%;
-            }
-            &-button {
-                width: 80px;
-                height: 80px;
-                padding: 30px;
-            }
-        }
-    }
+      .swiper {
+         &-slide {
+            transform: translateX(-70px);
+         }
+         &__buttons {
+            width: 100%;
+            left: auto;
+            right: auto;
+            padding: 0 20%;
+         }
+         &-button {
+            width: 80px;
+            height: 80px;
+            padding: 30px;
+         }
+      }
+   }
+}
+
+@media only screen and (min-width: 1140px) {
+   .rooms {
+      .swiper {
+         &-slide {
+            transform: translateX(-40px);
+         }
+		}
+	}
+}
+
+@media only screen and (min-width: 1240px) {
+   .rooms {
+      .swiper {
+         &-slide {
+            transform: translateX(-20px);
+         }
+		}
+	}
+}
+
+@media only screen and (min-width: 1430px) {
+   .rooms {
+      .swiper {
+         &-slide {
+            transform: translateX(5%);
+         }
+		}
+	}
+}
+
+@media only screen and (min-width: 1460px) {
+   .rooms {
+      .swiper {
+         &-slide {
+            transform: translateX(10%);
+         }
+		}
+	}
 }

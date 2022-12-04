@@ -5,6 +5,7 @@
 .menu {
     padding: 115px 20px 60px 20px;
     position: relative;
+	 overflow: hidden;
     &__img {
         position: absolute;
         width: 115px;
@@ -28,9 +29,12 @@
     }
     .swiper-menu {
         position: relative;
+		//   overflow: hidden;
         .swiper-wrapper {
+			
             .swiper-slide {
                 .swiper-foods__column {
+						overflow: hidden;
                     .food {
                         display: flex;
                         margin-bottom: 16px;

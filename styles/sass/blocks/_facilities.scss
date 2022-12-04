@@ -72,6 +72,7 @@
         }
     }
     .swiper-facilities {
+		overflow: hidden;
         &__pagination {
             margin-top: 32px;
             display: flex;

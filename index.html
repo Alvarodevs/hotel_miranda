@@ -19,13 +19,14 @@
 				<div class="nav__links">
 					<div class="burger-icon ">
 						<img class="burger-icon--open" src="./assets/icons/mobile_view/menu_burger.svg" alt="Menu">
+						<img class="burger-icon--close hidden" src="./assets/icons/mobile_view/close_btn.svg" alt="Close">
 					</div>
 
 					<!-- Nav for mobile -->
 					<nav class="nav__links__burger nav__links__burger--show">
 						<ul class="navbar__nav__list navbar__nav__list--mobile">
 							<li class="navbar__nav__list__link"><a href="./about_us.html">About</a></li>
-							<li class="navbar__nav__list__link"><a href="./rooms_grid.html">Rooms</a></li>
+							<li class="navbar__nav__list__link"><a href="./rooms_list.html">Rooms</a></li>
 							<li class="navbar__nav__list__link"><a href="#">Offers</a></li>
 							<li class="navbar__nav__list__link"><a href="./contact.html">Contact</a></li>
 						</ul>
@@ -47,7 +48,7 @@
 						<div class="nav__menu__links__desktop">
 							<ul class="navbar__nav__list navbar__nav__list--desktop">
 								<li class="navbar__nav__list__link"><a href="./about_us.html">About</a></li>
-								<li class="navbar__nav__list__link"><a href="./rooms_list.html">Rooms</a></li>
+								<li class="navbar__nav__list__link"><a href="./rooms_grid.html">Rooms</a></li>
 								<li class="navbar__nav__list__link"><a href="#">Offers</a></li>
 								<li class="navbar__nav__list__link"><a href="./contact.html">Contact</a></li>
 							</ul>
@@ -241,10 +242,10 @@
 			<!-- Nav btns -->
 			<div class="swiper__buttons">
 				<div class="swiper-button">
-					<div class="swiper-button--prev"></div>
+					<div class="swiper-button--prev" style="background-image: url(./assets/icons/chevron-left.svg)"></div>
 				</div>
 				<div class="swiper-button">
-					<div class="swiper-button--next"></div>
+					<div class="swiper-button--next" style="background-image: url(./assets/icons/chevron-right.svg)"></div>
 				</div>
 			</div>
 		</div>
@@ -570,18 +571,19 @@
 				</div>
 			</div>
 		</div>
-
+	</section>
 		<!-- SWIPER IMAGES FOODS -->
 		<div class="swiper-menu-images">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
 					<div class="image__container">
-						<div class="image__menu" style="background-image: url(./assets/images/menu_imgs/cheese.jpg)" > </div>
+						<div class="image__menu" style="background-image: url(./assets/images/menu_imgs/cheese.jpg)"> </div>
 					</div>
 				</div>
 				<div class="swiper-slide">
 					<div class="image__container">
-						<div class="image__menu" style="background-image: url(./assets/images/menu_imgs/tea-coffee.jpg)"> </div>
+						<div class="image__menu" style="background-image: url(./assets/images/menu_imgs/tea-coffee.jpg)">
+						</div>
 					</div>
 				</div>
 				<div class="swiper-slide">
@@ -591,50 +593,55 @@
 				</div>
 				<div class="swiper-slide">
 					<div class="image__container">
-						<div class="image__menu" style="background-image: url(./assets/images/menu_imgs/chia-oatmeal.jpg)"> </div>
+						<div class="image__menu" style="background-image: url(./assets/images/menu_imgs/chia-oatmeal.jpg)">
+						</div>
 					</div>
 				</div>
 				<div class="swiper-slide">
 					<div class="image__container">
-						<div class="image__menu" style="background-image: url(./assets/images/menu_imgs/eggs-bacon.jpg)"> </div>
+						<div class="image__menu" style="background-image: url(./assets/images/menu_imgs/eggs-bacon.jpg)">
+						</div>
 					</div>
 				</div>
 				<div class="swiper-slide">
 					<div class="image__container">
-						<div class="image__menu" style="background-image: url(./assets/images/menu_imgs/marmelade.jpg)"> </div>
+						<div class="image__menu" style="background-image: url(./assets/images/menu_imgs/marmelade.jpg)">
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="swiper-menu-images-pagination"></div>
 
 		</div>
-	</section>
+	
 
 	<!-- STATS DATA -->
 	<section class="stats">
-		<div class="stats__card">
-			<img src="./assets/icons/home_page/stats/rocket.svg" alt="Rocket" class="stats__card__img">
-			<p class="stats__card__amount">84k<span>+</span>
-			</p>
-			<p class="stats__card__text">Projects are Completed</p>
-		</div>
-		<div class="stats__card stats__card--backers">
-			<img src="./assets/icons/home_page/stats/backers.svg" alt="Rocket" class="stats__card__img">
-			<p class="stats__card__amount">10M<span>+</span>
-			</p>
-			<p class="stats__card__text">Active Backers Around World</p>
-		</div>
-		<div class="stats__card">
-			<img src="./assets/icons/home_page/stats/chart.svg" alt="Rocket" class="stats__card__img">
-			<p class="stats__card__amount">02k<span>+</span>
-			</p>
-			<p class="stats__card__text">Categories Served</p>
-		</div>
-		<div class="stats__card">
-			<img src="./assets/icons/home_page/stats/book.svg" alt="Rocket" class="stats__card__img">
-			<p class="stats__card__amount">100M<span>+</span>
-			</p>
-			<p class="stats__card__text">Idea raised funds</p>
+		<div class="stats-container">
+			<div class="stats__card">
+				<img src="./assets/icons/home_page/stats/rocket.svg" alt="Rocket" class="stats__card__img">
+				<p class="stats__card__amount">84k<span>+</span>
+				</p>
+				<p class="stats__card__text">Projects are Completed</p>
+			</div>
+			<div class="stats__card stats__card--backers">
+				<img src="./assets/icons/home_page/stats/backers.svg" alt="Rocket" class="stats__card__img">
+				<p class="stats__card__amount">10M<span>+</span>
+				</p>
+				<p class="stats__card__text">Active Backers Around World</p>
+			</div>
+			<div class="stats__card">
+				<img src="./assets/icons/home_page/stats/chart.svg" alt="Rocket" class="stats__card__img">
+				<p class="stats__card__amount">02k<span>+</span>
+				</p>
+				<p class="stats__card__text">Categories Served</p>
+			</div>
+			<div class="stats__card">
+				<img src="./assets/icons/home_page/stats/book.svg" alt="Rocket" class="stats__card__img">
+				<p class="stats__card__amount">100M<span>+</span>
+				</p>
+				<p class="stats__card__text">Idea raised funds</p>
+			</div>
 		</div>
 	</section>
 
@@ -734,7 +741,8 @@
 		</div>
 
 		<div class="footer__copyright">
-			<p class="footer__copyright__copy footer__copyright__text">Copyright By@<a href="https://www.linkedin.com/in/alvarodevs4you/">Alvarodevs</a></p>
+			<p class="footer__copyright__copy footer__copyright__text">Copyright By@<a
+					href="https://www.linkedin.com/in/alvarodevs4you/">Alvarodevs</a></p>
 			<div class="footer__copyright__links">
 				<a class="footer__copyright__text footer__copyright__link" href="#">Terms of use</a>
 				<p class="footer__copyright__text">|</p>

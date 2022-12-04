@@ -2,7 +2,7 @@ const swiper = new Swiper(".swiper", {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 1,
-    spaceBeween: 30,
+    spaceBeween: 100,
     autoplay: {
         delay: 5000,
     },
@@ -15,7 +15,7 @@ const swiper = new Swiper(".swiper", {
     breakpoints: {
         1000: {
             slidesPerView: 3,
-            spaceBeween: 300,
+            spaceBetween: 150,
         }
     },
     navigation: {

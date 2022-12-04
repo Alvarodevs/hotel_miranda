@@ -31,6 +31,12 @@
                   font-family: fonts.$archivo;
                   font-size: 14px;
                   color: colors.$grey-text;
+                  a {
+                     font-family: fonts.$archivo;
+                     font-size: 14px;
+                     color: colors.$grey-text;
+                     text-decoration: none;
+                  }
                }
             }
          }
@@ -54,9 +60,9 @@
    .contact {
       &_info_container {
          display: flex;
-			.card{
-				margin: auto auto auto 5rem;
-			}
+         .card {
+            margin: auto auto auto 5rem;
+         }
       }
    }
 }

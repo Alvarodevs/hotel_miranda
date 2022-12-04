@@ -60,8 +60,10 @@
                }
                &--close {
                   padding-top: 5px;
-                  content: url(../assets/icons/mobile_view/close_btn.svg);
                }
+					.hidden{
+						display: none;
+					}
             }
 
             .nav__menu__links {

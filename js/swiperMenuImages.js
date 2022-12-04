@@ -9,12 +9,15 @@ const swiper = new Swiper(".swiper-menu-images", {
     breakpoints: {
         320: {
             slidesPerView: 1,
-            spaceBetween: 20,
         },
         1000: {
             slidesPerView: 3,
-            spaceBetween: 300,
-        }
+            spaceBetween: 200,
+        },
+		 1400: {
+			 slidesPerView: 3,
+			 spaceBetween: 150,
+		 }
     },
     
     pagination: {
