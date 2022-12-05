@@ -1,5 +1,6 @@
 @use "../colors";
 @use "../fonts";
+@import "../buttons.scss";
 
 .contact {
    padding: 20px;
@@ -44,12 +45,72 @@
             &-background {
                position: absolute;
                bottom: 0;
-               left: 8rem;
+               left: 20%;
                font-family: fonts.$archivo;
                font-size: 200px;
                color: colors.$grey-dark;
                opacity: 4%;
                font-weight: 700;
+            }
+         }
+      }
+   }
+   &_form {
+      padding: 60px 20px 30px 20px;
+      .form {
+         &--column {
+            margin: auto;
+         }
+         &__container__input {
+            position: relative;
+            margin: 15px 0;
+         }
+         &__input {
+            border: none;
+            font-size: 15px;
+            display: inline-block;
+            position: relative;
+            width: 100%;
+            padding: 20px 25px 20px 60px;
+            background-color: colors.$grey-light;
+            font-family: fonts.$archivo;
+            color: colors.$grey-text;
+            width: 100%;
+         }
+         &__icon {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+
+            &--user {
+               filter: invert(0.6) sepia(1);
+               width: 16px;
+            }
+         }
+         &__button {
+            @include button(260px, colors.$gold-light);
+            margin: auto;
+            border: none;
+         }
+      }
+      textarea {
+         height: 175px;
+      }
+      .button__container {
+         display: flex;
+         width: 100%;
+         margin: auto;
+      }
+   }
+}
+@media only screen and (min-width: 380px) {
+   .contact {
+      &_info_container {
+         .card {
+            &__img {
+               &-background {
+                  left: 8rem;
+               }
             }
          }
       }
@@ -62,6 +123,17 @@
          display: flex;
          .card {
             margin: auto auto auto 5rem;
+         }
+      }
+      &_form {
+			padding: 130px 15% 100px 15%;
+         .form {
+            display: flex;
+				justify-content: space-between;
+
+				&_column{
+					width: 49%;
+				}
          }
       }
    }

@@ -3,56 +3,85 @@
 @import "../buttons.scss";
 
 .map-section {
+   padding: 0 20px;
    #map {
       margin: 50px auto;
       height: 500px;
-      width: 80%;
+      width: 95%;
       background-color: grey;
-		button{
-			border: none;
+      button {
+         border: none;
          @include button(150px, colors.$gold-light);
-			opacity: 0.8;
-			color: colors.$black;
-		}
+         opacity: 0.8;
+         color: colors.$black;
+      }
    }
 
-	&-inputs{
-		font-family: fonts.$roboto;
-		margin: auto;
-		&-address {
-			#input-address{
-				font-family: fonts.$roboto;
-			}
-			#send-address{
-				@include button(100px, colors.$gold-dark);
-				border: none;
-				font-size: 18px;
-				margin-left: 10px;
-			}
-		}
+   &-inputs {
+      font-family: fonts.$roboto;
+      margin: auto;
+      text-align: center;
+      &-address {
+         #input-address {
+            font-family: fonts.$roboto;
+         }
+         #send-address {
+            @include button(100px, colors.$gold-dark);
+            border: none;
+            font-size: 18px;
+            margin-left: 10px;
+            margin-top: 10px;
+         }
+      }
 
-		&-regions{
-			#regions{
-				font-family: fonts.$roboto;
-				height: 30px;
-				font-size: 15px;
-				margin: auto;
-			}
-		}
-	}
+      &-regions {
+         padding: 20px 0;
+         #regions {
+            font-family: fonts.$roboto;
+            height: 30px;
+            font-size: 15px;
+            margin: 10px auto;
+         }
+      }
+   }
+   #distances {
+      padding: 0 10%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 17px 55px;
+      .distance {
+         background-color: #bead8e;
+         font-family: "Roboto", sans-serif;
+         padding: 10px;
+         min-height: 70px;
+         height: fit-content;
+         text-align: center;
+         color: white;
+         box-shadow: 0px 5px 10px 1px rgb(0 0 0 / 40%);
+      }
+   }
+}
+@media only screen and (min-width: 473px) {
+   .map-section {
+      &-inputs {
+         &-address {
+            #send-address {
+               margin-top: 0;
+            }
+         }
+      }
+   }
 }
 
 @media only screen and (min-width: 1000px) {
-	.map-section{
-		
-		#map{
-			width: 90%;
-		}
-		
-		&-inputs {
-			display: flex;
-			justify-content: space-evenly;
-			align-items: center;
-		}
-	}
+   .map-section {
+      &-inputs {
+         display: flex;
+         justify-content: space-evenly;
+         align-items: center;
+      }
+      #distances {
+         grid-template-columns: 1fr 1fr 1fr;
+      }
+   }
 }

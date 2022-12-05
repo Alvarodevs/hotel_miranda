@@ -166,7 +166,7 @@ function initMap() {
 
 			let listDistances = '';
 			distancesToOrder.map((element, i) => {
-				listDistances += '<div>' + `Distance to ${element[0]} - ${element[1]} kms` + '</div>';
+				listDistances += '<div class="distance">' + `Distance to ${element[0]} - ${element[1]} kms` + '</div>';
 			});
 
 			document.getElementById("distances").innerHTML = listDistances;
