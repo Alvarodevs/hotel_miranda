@@ -1,0 +1,48 @@
+@use "../colors";
+@use "../fonts";
+
+.popular {
+   padding: 48px 20px;
+   background-color: colors.$black-full;
+   width: 100%;
+   &__titles {
+      margin: 20px auto;
+      height: 50px;
+      text-align: center;
+      &__title {
+         font-family: fonts.$old;
+         font-size: 40px;
+         color: colors.$white;
+			margin-bottom: 50px;
+      }
+      &__subtitle {
+         font-family: fonts.$archivo;
+         font-size: 14px;
+         color: colors.$gold-light;
+         text-transform: uppercase;
+         margin-bottom: 25px;
+      }
+   }
+   .room {
+      &__container {
+         max-width: 350px;
+             margin: 50px auto;
+      }
+      &__content {
+         padding: 30px;
+         position: relative;
+         width: 100%;
+         margin: auto;
+
+         &--offer {
+            background-color: colors.$white;
+         }
+      }
+      &__bar {
+         position: absolute;
+         top: -20px;
+         left: 0;
+         right: 0;
+      }
+   }
+}

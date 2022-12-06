@@ -2003,36 +2003,47 @@
     height: 570px;
   }
 }
-.popular_list {
+.popular {
   padding: 48px 20px;
   background-color: #000000;
   width: 100%;
 }
-.popular_list .swiper-slide {
-  margin: auto;
+.popular__titles {
+  margin: 20px auto;
+  height: 50px;
+  text-align: center;
 }
-.popular_list .room__container {
+.popular__titles__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 40px;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+.popular__titles__subtitle {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  color: #bead8e;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.popular .room__container {
   max-width: 350px;
+  margin: 50px auto;
+}
+.popular .room__content {
+  padding: 30px;
+  position: relative;
+  width: 100%;
   margin: auto;
 }
-.popular_list .room__container .room__img {
-  width: 100%;
-}
-.popular_list .room__container .room__content {
+.popular .room__content--offer {
   background-color: #ffffff;
-  position: relative;
 }
-.popular_list .room__container .room__content .room__bar {
+.popular .room__bar {
   position: absolute;
-  top: -10px;
+  top: -20px;
   left: 0;
   right: 0;
-}
-.popular_list .room__container .room__content .room__text {
-  padding-top: 35px;
-}
-.popular_list .room__container .room__content .room__price {
-  padding-bottom: 35px;
 }
 
 .contact {
