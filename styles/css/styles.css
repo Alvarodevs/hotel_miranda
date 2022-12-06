@@ -2046,6 +2046,14 @@
   right: 0;
 }
 
+@media only screen and (min-width: 1000px) {
+  .popular {
+    padding: 48px 10%;
+  }
+  .popular .room__bar {
+    top: 0;
+  }
+}
 .contact {
   padding: 20px;
 }

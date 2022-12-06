@@ -13,7 +13,7 @@
          font-family: fonts.$old;
          font-size: 40px;
          color: colors.$white;
-			margin-bottom: 50px;
+         margin-bottom: 50px;
       }
       &__subtitle {
          font-family: fonts.$archivo;
@@ -26,7 +26,7 @@
    .room {
       &__container {
          max-width: 350px;
-             margin: 50px auto;
+         margin: 50px auto;
       }
       &__content {
          padding: 30px;
@@ -43,6 +43,17 @@
          top: -20px;
          left: 0;
          right: 0;
+      }
+   }
+}
+
+@media only screen and (min-width: 1000px) {
+   .popular {
+      padding: 48px 10%;
+      .room {
+         &__bar {
+            top: 0;
+         }
       }
    }
 }
