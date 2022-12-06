@@ -1,0 +1,54 @@
+@use "../colors";
+@use "../fonts";
+
+.rooms-list {
+   #popular-list {
+      padding: 48px 20px;
+      background-color: colors.$black-full;
+      width: 100%;
+      &_titles {
+         margin: 20px auto;
+         background-color: red;
+         height: 50px;
+         .title {
+            font-family: font.$old;
+            font-size: 40px;
+            color: colors.$white;
+            .subtitle {
+               font-family: font.$archivo;
+               font-size: 14px;
+               color: colors.$gold-light;
+            }
+         }
+      }
+
+      .swiper-slide {
+         margin: auto;
+      }
+      .room__container {
+         //padding: 0 10%;
+         max-width: 350px;
+         margin: auto;
+         .room__img {
+            width: 100%;
+         }
+         .room__content {
+            // margin-top: 10px;
+            //background-color: colors.$white;
+            position: relative;
+            .room__bar {
+               position: absolute;
+               top: -10px;
+               left: 0;
+               right: 0;
+            }
+            .room__text {
+               padding-top: 35px;
+            }
+            .room__price {
+               padding-bottom: 35px;
+            }
+         }
+      }
+   }
+}

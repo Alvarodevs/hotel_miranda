@@ -1,0 +1,116 @@
+@use "../colors";
+@use "../fonts";
+@import "../buttons.scss";
+
+.offers {
+   padding: 48px 20px 0 20px;
+
+   .offer {
+		box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
+		margin-bottom: 35px;
+      &__image {
+         position: relative;
+         .image {
+            background-color: colors.$grey-light;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 170px;
+         }
+      }
+      &__prices {
+         position: absolute;
+         right: 15px;
+         top: 80px;
+         font-family: fonts.$archivo;
+         text-align: end;
+         font-weight: 700;
+         letter-spacing: 2px;
+         padding-bottom: 10px;
+         text-shadow: 1px 1px 2px colors.$gold-light;
+         .line-through {
+            text-decoration: line-through;
+         }
+         span {
+            font-size: 12px;
+         }
+         &--old {
+            font-size: 23px;
+            padding-bottom: 10px;
+            color: colors.$gold-light;
+         }
+         &--new {
+            font-size: 30px;
+            color: colors.$red-pale;
+         }
+      }
+      &__text {
+         padding: 16px 20px;
+         &__subtitle {
+            font-family: fonts.$archivo;
+            font-size: 14px;
+            letter-spacing: 3px;
+            color: colors.$grey-text;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            font-weight: 700;
+         }
+         &__title {
+            font-family: fonts.$old;
+            font-size: 40px;
+            font-weight: 400;
+         }
+
+         &__description {
+            padding: 16px 0;
+            font-family: fonts.$roboto;
+            font-size: 14px;
+            font-weight: 400;
+            color: colors.$grey-text;
+            line-height: 24px;
+            letter-spacing: 1px;
+         }
+      }
+      &__amenities {
+         display: grid;
+         grid-template-columns: repeat(auto-fill, minmax(8rem, 0.6fr));
+			grid-auto-rows: 25px;
+			gap: 10px;
+			margin-bottom: 25px;
+         &__item {
+            display: flex;
+				align-items: center;
+         }
+         .item {
+            &__image {
+					height: 80%;
+            }
+            &__text {
+               padding: 8px;
+					font-family: fonts.$roboto;
+					font-size: 15px;
+					color: colors.$grey-text;
+					font-weight: 500;
+            }
+         }
+      }
+		&__button{
+			@include button(216px, colors.$gold-light);
+			border: none;
+		}
+   }
+}
+
+@media only screen and (min-width: 1000px) {
+   .offers {
+      padding: 48px 15% 0 15%;
+      .offer {
+         &__image {
+            .image {
+               height: 570px;
+            }
+         }
+      }
+   }
+}
