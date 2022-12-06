@@ -1908,12 +1908,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 170px;
+  height: 200px;
 }
 .offers .offer__prices {
   position: absolute;
   right: 15px;
-  top: 80px;
+  top: 100px;
   font-family: "Archivo", sans-serif;
   text-align: end;
   font-weight: 700;
@@ -1938,6 +1938,9 @@
 }
 .offers .offer__text {
   padding: 16px 20px;
+}
+.offers .offer__text hr {
+  display: none;
 }
 .offers .offer__text__subtitle {
   font-family: "Archivo", sans-serif;
@@ -1964,10 +1967,11 @@
 }
 .offers .offer__amenities {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(8rem, 0.6fr));
+  grid-template-columns: repeat(auto-fill, minmax(6rem, 0.6fr));
   grid-auto-rows: 25px;
   gap: 10px;
   margin-bottom: 25px;
+  padding: 20px 0;
 }
 .offers .offer__amenities__item {
   display: flex;
@@ -1999,8 +2003,43 @@
   .offers {
     padding: 48px 15% 0 15%;
   }
+  .offers .offer {
+    position: relative;
+    margin-bottom: 500px;
+  }
   .offers .offer__image .image {
     height: 570px;
+  }
+  .offers .offer__text {
+    padding: 60px 40px 60px 60px;
+    width: 85%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: -75px auto auto auto;
+    background-color: #ffffff;
+    border-top: 6px solid #bead8e;
+  }
+  .offers .offer__text hr {
+    display: block;
+    border: 1px solid #ECECEC;
+    margin: 40px 0 35px 0;
+  }
+  .offers .offer__prices {
+    right: 40px;
+    top: 60px;
+  }
+  .offers .offer__desc__amenities {
+    display: flex;
+  }
+  .offers .offer__text__description {
+    width: 50%;
+    padding: 16px 50px 16px 0;
+  }
+  .offers .offer__amenities {
+    width: 50%;
+    padding: 16px;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .popular {

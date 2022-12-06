@@ -16,7 +16,6 @@ const swiper = new Swiper(".swiper", {
         1000: {
             slidesPerView: 3,
             spaceBetween: 150,
-				autoplay: 0,
         }
     },
     navigation: {
