@@ -1018,6 +1018,9 @@
     max-width: 100%;
     margin-bottom: 45px;
   }
+  .menu .swiper-menu .swiper-wrapper .swiper-slide {
+    width: 600px;
+  }
   .menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column .food {
     margin-bottom: 20px;
   }

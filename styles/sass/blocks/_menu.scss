@@ -32,6 +32,7 @@
         .swiper-wrapper {
 			
             .swiper-slide {
+                // min-width: fit-content;
                 .swiper-foods__column {
 						overflow: hidden;
                         // min-width: 600px;
@@ -127,6 +128,7 @@
         .swiper-menu {
             .swiper-wrapper {
                 .swiper-slide {
+                    width: 600px;
                     .swiper-foods__column {
                         // min-width: 600px;
                         .food {
