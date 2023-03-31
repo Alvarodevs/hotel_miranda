@@ -17,13 +17,13 @@
     &__title {
         font-size: 56px;
         font-family: fonts.$old;
-        max-width: 350px;
+        // max-width: 350px;
         &--small {
             font-size: 14px;
             font-family: fonts.$archivo;
             letter-spacing: 3px;
             font-weight: 700;
-            padding-top: 20%;
+            padding-top: 5%;
             margin-bottom: 24px;
         }
     }

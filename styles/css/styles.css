@@ -250,6 +250,7 @@
   font-family: "Archivo", sans-serif;
   font-weight: 700;
   background-color: #ffffff;
+  width: -moz-max-content;
   width: max-content;
   padding: 16px 24px;
   position: absolute;
@@ -611,6 +612,7 @@
   }
 }
 .room-home {
+  width: -moz-fit-content;
   width: fit-content;
   display: block;
   margin: auto;
@@ -923,13 +925,13 @@
 .menu__title {
   font-size: 56px;
   font-family: "Old Standard TT", serif;
-  max-width: 350px;
 }
 .menu__title--small {
   font-size: 14px;
   font-family: "Archivo", sans-serif;
   letter-spacing: 3px;
   font-weight: 700;
+  padding-top: 5%;
   margin-bottom: 24px;
 }
 .menu .swiper-menu {
@@ -937,10 +939,13 @@
 }
 .menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column {
   overflow: hidden;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column .food {
   display: flex;
   margin-bottom: 16px;
+  height: -moz-min-content;
   height: min-content;
 }
 .menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column .food__img {
@@ -1002,7 +1007,7 @@
 
 @media only screen and (min-width: 1000px) {
   .menu {
-    padding: 200px 375px 120px 375px;
+    padding: 200px 20% 120px 20%;
   }
   .menu__img {
     width: 230px;
@@ -1806,7 +1811,8 @@
 }
 .founder__card__avatar__image {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
 }
 .founder__card__avatar__check {
@@ -2282,6 +2288,7 @@
   font-family: "Roboto", sans-serif;
   padding: 10px;
   min-height: 70px;
+  height: -moz-fit-content;
   height: fit-content;
   text-align: center;
   color: white;
@@ -2474,4 +2481,4 @@ html, * {
 
 body {
   min-width: 320px;
-}/*# sourceMappingURL=styles.css.map */
+}
