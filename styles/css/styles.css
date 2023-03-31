@@ -925,6 +925,7 @@
 .menu__title {
   font-size: 56px;
   font-family: "Old Standard TT", serif;
+  margin-bottom: 10px;
 }
 .menu__title--small {
   font-size: 14px;
@@ -939,8 +940,7 @@
 }
 .menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column {
   overflow: hidden;
-  width: -moz-fit-content;
-  width: fit-content;
+  min-width: 600px;
 }
 .menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column .food {
   display: flex;
@@ -1019,9 +1019,12 @@
     max-width: 100%;
     margin-bottom: 45px;
   }
+  .menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column {
+    min-width: 600px;
+  }
   .menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column .food {
     margin-bottom: 20px;
-    width: 570px;
+    min-width: 570px;
   }
   .menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column .food__img--marmelade {
     margin: 0;
