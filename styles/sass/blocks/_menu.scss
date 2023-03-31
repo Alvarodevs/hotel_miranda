@@ -34,15 +34,15 @@
             .swiper-slide {
                 .swiper-foods__column {
 						overflow: hidden;
-                        min-width: 600px;
+                        // min-width: 600px;
                     .food {
                         display: flex;
                         margin-bottom: 16px;
                         height: min-content;
                         
                         &__img {
-                            width: 120px;
-                            height: 120px;
+                            min-width: 120px;
+                            min-height: 120px;
                             background-position: center;
                             background-repeat: no-repeat;
                             background-size: cover;
@@ -128,10 +128,10 @@
             .swiper-wrapper {
                 .swiper-slide {
                     .swiper-foods__column {
-                        min-width: 600px;
+                        // min-width: 600px;
                         .food {
                             margin-bottom: 20px;
-                            min-width: 570px;
+                            // min-width: 570px;
 
                             &__img{
                                 &--marmelade {
@@ -144,7 +144,7 @@
                                 padding-top: 15px;
 
                                 &__description {
-                                    width: 285px;
+                                    min-width: 285px;
                                 }
                             }
 

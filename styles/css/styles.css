@@ -940,7 +940,6 @@
 }
 .menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column {
   overflow: hidden;
-  min-width: 600px;
 }
 .menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column .food {
   display: flex;
@@ -949,8 +948,8 @@
   height: min-content;
 }
 .menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column .food__img {
-  width: 120px;
-  height: 120px;
+  min-width: 120px;
+  min-height: 120px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1019,12 +1018,8 @@
     max-width: 100%;
     margin-bottom: 45px;
   }
-  .menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column {
-    min-width: 600px;
-  }
   .menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column .food {
     margin-bottom: 20px;
-    min-width: 570px;
   }
   .menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column .food__img--marmelade {
     margin: 0;
@@ -1034,7 +1029,7 @@
     padding-top: 15px;
   }
   .menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column .food__text__description {
-    width: 285px;
+    min-width: 285px;
   }
   .menu .swiper-menu .swiper-wrapper .swiper-slide .swiper-foods__column .food:hover .food__arrow {
     display: inline-block;
